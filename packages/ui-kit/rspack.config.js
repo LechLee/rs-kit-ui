@@ -16,8 +16,7 @@ module.exports = {
 		extensions: ['.tsx', '.ts', '.js', '.jsx'],
 		alias: {
 			'@': path.resolve(__dirname),
-			'@/components': path.resolve(__dirname, 'components'),
-			'@/lib': path.resolve(__dirname, 'lib')
+			'@/components': path.resolve(__dirname, 'components')
 		}
 	},
 	externals: {
@@ -30,11 +29,11 @@ module.exports = {
 				test: /\.tsx?$/,
 				use: 'builtin:swc-loader',
 				exclude: /node_modules/
-			},
-			{
-				test: /\.css$/,
-				use: ['style-loader', 'css-loader', 'postcss-loader']
 			}
+			// {
+			// 	test: /\.css$/,
+			// 	use: ['style-loader', 'css-loader', 'postcss-loader']
+			// }
 		]
 	}
 }

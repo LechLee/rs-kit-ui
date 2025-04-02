@@ -46,8 +46,9 @@ yarn-error.log*
 ehthumbs.db
 Thumbs.db
 
-# Turbo
-.turbo/
+# PNPM
+.pnpm-store/
+pnpm-lock.yaml
 
 # Cache
 .cache/

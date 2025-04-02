@@ -1,4 +1,4 @@
-# UI Kit Monorepo with Rspack
+# UI Kit Monorepo with Rspack and PNPM Workspaces
 
 This is a monorepo containing a UI Kit based on Shadcn UI components and a documentation site built with React and TypeScript, all bundled with Rspack for fast builds.
 
@@ -19,7 +19,7 @@ has-ui-kit-v4/
 ## Prerequisites
 
 - Node.js (v16 or higher)
-- npm (v7 or higher)
+- PNPM (v8 or higher)
 
 ## Getting Started
 
@@ -33,35 +33,29 @@ cd has-ui-kit-v4
 2. Install dependencies:
 
 ```bash
-npm install
+pnpm install
 ```
 
 ## Development
 
-### Build the UI Kit
+### Start Development Mode
 
 ```bash
-npm run build:ui-kit
+pnpm dev
 ```
 
-### Start the Documentation site
+This will start development servers for all packages in parallel.
+
+### Build all packages
 
 ```bash
-npm run start:docs
+pnpm build
 ```
 
-This will start a development server at [http://localhost:3000](http://localhost:3000).
-
-### Build the Documentation site
+### Start all packages
 
 ```bash
-npm run build:docs
-```
-
-### Build everything
-
-```bash
-npm run build
+pnpm start
 ```
 
 ## Adding New Components to the UI Kit
@@ -86,7 +80,7 @@ To publish the UI Kit to npm:
 
 1. Update the version in `packages/ui-kit/package.json`
 2. Build the UI Kit
-3. Run `npm publish --workspace=ui-kit`
+3. Run `pnpm publish --filter ui-kit`
 
 ## License
 

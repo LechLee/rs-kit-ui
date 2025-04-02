@@ -1,7 +1,10 @@
 import React from 'react'
 import { ComponentDoc } from './components/ComponentDoc'
 import { Button } from 'ui-kit'
+
 import { BookOpen } from 'lucide-react'
+
+import 'ui-kit/styles.css'
 
 function App() {
 	return (
@@ -17,6 +20,7 @@ function App() {
 
 			<main className="max-w-7xl mx-auto px-4 py-8">
 				<Button>Default Button</Button>
+				{/* <Button /> */}
 				{/* <ComponentDoc
 					title="Button"
 					description="A versatile button component with multiple variants and sizes, built on top of Radix UI Slot primitive."

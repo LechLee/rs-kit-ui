@@ -2,19 +2,15 @@
   "name": "has-ui-kit-v4",
   "version": "1.0.0",
   "private": true,
-  "packageManager": "npm@10.9.2",
-  "workspaces": [
-    "packages/*"
-  ],
+  "packageManager": "pnpm@8.15.4",
   "scripts": {
-    "build": "turbo build",
-    "dev": "turbo run dev --parallel",
-    "start": "turbo start"
+    "build": "pnpm -r build",
+    "dev": "pnpm -r --parallel dev",
+    "start": "pnpm -r --parallel start"
   },
   "devDependencies": {
     "@rspack/cli": "^0.5.1",
     "@rspack/core": "^0.5.1",
-    "turbo": "^2.4.4",
     "typescript": "^5.2.2"
   },
   "dependencies": {
