@@ -6,11 +6,8 @@
   "scripts": {
     "build": "pnpm -r build",
     "build:ui-kit": "pnpm --filter ui-kit build",
-    "build:rsbuild": "pnpm -r --parallel build:rsbuild",
-    "dev": "pnpm -r --parallel dev",
-    "dev:rspack": "pnpm -r --parallel dev:rspack",
     "playground": "pnpm --filter playground dev",
-    "start": "pnpm -r --parallel start"
+    "start": "pnpm build:ui-kit && (pnpm --filter ui-kit dev & sleep 2 && pnpm --filter playground dev)"
   },
   "devDependencies": {
     "@rspack/cli": "^0.5.1",

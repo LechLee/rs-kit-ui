@@ -15,7 +15,6 @@
   "scripts": {
     "build": "rslib build ",
     "build:lib": "rslib build",
-    "build:rsbuild": "rsbuild build",
     "dev": "rslib build --watch"
   },
   "peerDependencies": {
@@ -69,10 +68,7 @@
     "zod": "^3.24.2"
   },
   "devDependencies": {
-    "@rsbuild/core": "^1.2.16",
-    "@rsbuild/plugin-react": "^1.1.1",
     "@rslib/core": "^0.6.1",
-    "@rsbuild/plugin-type-check": "1.2.1",
     "@tailwindcss/postcss": "^4.0.15",
     "@types/node": "^20.8.4",
     "@types/react": "^18.2.21",
