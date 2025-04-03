@@ -27,17 +27,19 @@ export function ComponentDoc({ title, description, component, code, props }: Pro
 					<div className="flex items-center justify-center min-h-[100px]">{component}</div>
 				</div>
 
-				<div className="mb-6">
-					<button onClick={() => setShowCode(!showCode)} className="flex items-center gap-2 text-sm text-gray-600 hover:text-gray-900">
-						<Code size={16} />
-						{showCode ? 'Hide Code' : 'Show Code'}
-					</button>
-					{showCode && (
-						<pre className="mt-2 p-4 bg-gray-900 rounded-lg overflow-x-auto">
-							<code className="text-gray-100 text-sm">{code}</code>
-						</pre>
-					)}
-				</div>
+				{code && (
+					<div className="mb-6">
+						<button onClick={() => setShowCode(!showCode)} className="flex items-center gap-2 text-sm text-gray-600 hover:text-gray-900">
+							<Code size={16} />
+							{showCode ? 'Hide Code' : 'Show Code'}
+						</button>
+						{showCode && (
+							<pre className="mt-2 p-4 bg-gray-900 rounded-lg overflow-x-auto">
+								<code className="text-gray-100 text-sm">{code}</code>
+							</pre>
+						)}
+					</div>
+				)}
 
 				{props && props.length > 0 && (
 					<div>

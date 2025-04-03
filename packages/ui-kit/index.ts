@@ -1,19 +1,6 @@
-import './styles.css'
-
 // Components exports
 export { Button } from './components/ui/button'
 export { Input } from './components/ui/input'
-export {
-	AlertDialog,
-	AlertDialogAction,
-	AlertDialogCancel,
-	AlertDialogContent,
-	AlertDialogDescription,
-	AlertDialogFooter,
-	AlertDialogHeader,
-	AlertDialogTitle,
-	AlertDialogTrigger
-} from './components/ui/alert-dialog'
 export { Checkbox } from './components/ui/checkbox'
 export { Command, CommandDialog, CommandEmpty, CommandGroup, CommandInput, CommandItem, CommandList, CommandSeparator, CommandShortcut } from './components/ui/command'
 export { Dialog, DialogClose, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle, DialogTrigger } from './components/ui/dialog'
@@ -57,6 +44,19 @@ export { Textarea } from './components/ui/textarea'
 export { Toggle } from './components/ui/toggle'
 export { ToggleGroup } from './components/ui/toggle-group'
 export { Tooltip } from './components/ui/tooltip'
+export {
+	AlertDialog,
+	AlertDialogAction,
+	AlertDialogCancel,
+	AlertDialogContent,
+	AlertDialogDescription,
+	AlertDialogFooter,
+	AlertDialogHeader,
+	AlertDialogTitle,
+	AlertDialogTrigger
+} from './components/ui/alert-dialog'
 
 // Utility exports
 export { cn } from './lib/utils'
+
+import './styles.css'
