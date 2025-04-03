@@ -6,18 +6,17 @@ export default defineConfig({
 	source: {
 		entry: {
 			index: ['./index.ts']
-		}
-	},
-	resolve: {
+		},
 		alias: {
-			'@': path.resolve(__dirname)
+			'@': '.'
 		}
 	},
 	lib: [
 		{
-			bundle: false,
+			bundle: true,
 			dts: true,
-			format: 'esm'
+			format: 'esm',
+			sourcemap: true
 		}
 	],
 	output: {

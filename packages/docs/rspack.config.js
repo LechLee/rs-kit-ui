@@ -15,7 +15,10 @@ module.exports = {
 		clean: true
 	},
 	resolve: {
-		extensions: ['.tsx', '.ts', '.js', '.jsx']
+		extensions: ['.tsx', '.ts', '.js', '.jsx'],
+		alias: {
+			'@': path.resolve(__dirname, '../ui-kit')
+		}
 	},
 	plugins: [
 		new HtmlWebpackPlugin({
@@ -43,7 +46,6 @@ module.exports = {
 	},
 	devServer: {
 		historyApiFallback: true,
-		port: 3000,
 		hot: true,
 		open: true
 	}
