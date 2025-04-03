@@ -9,7 +9,8 @@
     ".": {
       "import": "./dist/index.mjs",
       "types": "./dist/index.d.ts"
-    }
+    },
+    "./dist/index.css": "./dist/index.css"
   },
   "scripts": {
     "build": "rslib build ",

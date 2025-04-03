@@ -17,7 +17,7 @@ module.exports = {
 	resolve: {
 		extensions: ['.tsx', '.ts', '.js', '.jsx'],
 		alias: {
-			'@': path.resolve(__dirname, '../ui-kit')
+			'@': path.resolve(__dirname)
 		}
 	},
 	plugins: [
@@ -46,6 +46,7 @@ module.exports = {
 	},
 	devServer: {
 		historyApiFallback: true,
+		port: 3000,
 		hot: true,
 		open: true
 	}

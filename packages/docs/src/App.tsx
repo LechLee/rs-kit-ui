@@ -4,6 +4,7 @@ import { Button } from 'ui-kit'
 
 import { BookOpen } from 'lucide-react'
 
+import 'ui-kit/dist/index.css'
 import './styles.css'
 
 function App() {
