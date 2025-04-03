@@ -13,9 +13,5 @@
     "@rspack/cli": "^0.5.1",
     "@rspack/core": "^0.5.1",
     "typescript": "^5.2.2"
-  },
-  "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
   }
 }

@@ -1,14 +1,30 @@
-import React from 'react'
+import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
+import { createBrowserRouter, Navigate, RouterProvider } from 'react-router'
+import ButtonPlay from '@/playground/Button.play'
 import App from './App'
-import './styles.css'
 
-const rootElement = document.getElementById('root')
-if (!rootElement) throw new Error('Failed to find the root element')
+const routes = [
+	{
+		path: '/',
+		element: <App />,
+		children: [
+			{
+				path: '/',
+				element: <ButtonPlay />
+			}
+		]
+	}
+]
+const router = createBrowserRouter(routes, {})
 
-const root = createRoot(rootElement)
-root.render(
-	<React.StrictMode>
-		<App />
-	</React.StrictMode>
+const root = document.getElementById('root')
+if (!root) {
+	throw new Error('Root element not found')
+}
+
+createRoot(root).render(
+	<StrictMode>
+		<RouterProvider router={router} />
+	</StrictMode>
 )
