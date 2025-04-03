@@ -5,7 +5,7 @@ interface Props {
 	title: string
 	description: string
 	component: React.ReactNode
-	code: string
+	code?: string
 	props?: {
 		name: string
 		type: string
