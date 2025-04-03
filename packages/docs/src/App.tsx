@@ -4,7 +4,7 @@ import { Button } from 'ui-kit'
 
 import { BookOpen } from 'lucide-react'
 
-import 'ui-kit/styles.css'
+import './styles.css'
 
 function App() {
 	return (
@@ -20,6 +20,11 @@ function App() {
 
 			<main className="max-w-7xl mx-auto px-4 py-8">
 				<Button>Default Button</Button>
+				<Button variant="secondary">Secondary</Button>
+				<Button variant="destructive">Destructive</Button>
+				<Button variant="outline">Outline</Button>
+				<Button variant="ghost">Ghost</Button>
+				<Button variant="link">Link</Button>
 				{/* <Button /> */}
 				{/* <ComponentDoc
 					title="Button"
