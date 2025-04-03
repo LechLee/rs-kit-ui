@@ -9,6 +9,7 @@
     "build:rsbuild": "pnpm -r --parallel build:rsbuild",
     "dev": "pnpm -r --parallel dev",
     "dev:rspack": "pnpm -r --parallel dev:rspack",
+    "playground": "pnpm --filter playground dev",
     "start": "pnpm -r --parallel start"
   },
   "devDependencies": {

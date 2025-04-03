@@ -1,4 +1,3 @@
-import React from 'react'
 import { ComponentDoc } from './components/ComponentDoc'
 import { Button } from 'ui-kit'
 
