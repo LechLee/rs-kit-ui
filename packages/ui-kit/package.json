@@ -12,14 +12,14 @@
     },
     "./dist/index.css": "./dist/index.css"
   },
+  "peerDependencies": {
+    "react": "^16.8 || ^17.0 || ^18.0 || ^19.0",
+    "react-dom": "^16.8 || ^17.0 || ^18.0 || ^19.0"
+  },
   "scripts": {
     "build": "rslib build ",
     "build:lib": "rslib build",
     "dev": "rslib build --watch"
-  },
-  "peerDependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.0.0",
@@ -71,8 +71,6 @@
     "@rslib/core": "^0.6.1",
     "@tailwindcss/postcss": "^4.0.15",
     "@types/node": "^20.8.4",
-    "@types/react": "^18.2.21",
-    "@types/react-dom": "^18.2.7",
     "autoprefixer": "^10.4.15",
     "css-loader": "^7.1.2",
     "postcss": "^8.5.3",
