@@ -11,6 +11,10 @@ const routes = [
 		children: [
 			{
 				path: '/',
+				element: <Navigate to="/button" replace />
+			},
+			{
+				path: '/button',
 				element: <ButtonPlay />
 			}
 		]

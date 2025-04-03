@@ -8,10 +8,5 @@
     "build:ui-kit": "pnpm --filter ui-kit build",
     "playground": "pnpm --filter playground dev",
     "start": "pnpm build:ui-kit && (pnpm --filter ui-kit dev & sleep 2 && pnpm --filter playground dev)"
-  },
-  "devDependencies": {
-    "@rspack/cli": "^0.5.1",
-    "@rspack/core": "^0.5.1",
-    "typescript": "^5.2.2"
   }
 }
