@@ -6,9 +6,11 @@ export default defineConfig({
 	source: {
 		entry: {
 			index: ['./index.ts']
-		},
+		}
+	},
+	resolve: {
 		alias: {
-			'@': '.'
+			'@': path.resolve(__dirname)
 		}
 	},
 	lib: [

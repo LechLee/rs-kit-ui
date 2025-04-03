@@ -15,7 +15,8 @@
   "scripts": {
     "build": "rslib build ",
     "build:lib": "rslib build",
-    "dev": "rslib build"
+    "build:rsbuild": "rsbuild build",
+    "dev": "rslib build --watch"
   },
   "peerDependencies": {
     "react": "^18.2.0",

@@ -18,7 +18,8 @@ module.exports = {
 		extensions: ['.tsx', '.ts', '.js', '.jsx'],
 		alias: {
 			'@': path.resolve(__dirname)
-		}
+		},
+		symlinks: true
 	},
 	plugins: [
 		new HtmlWebpackPlugin({
@@ -48,6 +49,7 @@ module.exports = {
 		historyApiFallback: true,
 		port: 3000,
 		hot: true,
-		open: true
+		open: true,
+		watchFiles: ['../ui-kit/dist/**/*']
 	}
 }
