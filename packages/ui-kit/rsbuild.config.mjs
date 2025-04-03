@@ -2,20 +2,26 @@ import path from 'path'
 import { defineConfig } from '@rsbuild/core'
 import { pluginReact } from '@rsbuild/plugin-react'
 import { createRequire } from 'module'
+import { rslib } from '@rslib/core'
 
-const require = createRequire(import.meta.url)
-const packageJson = require('./package.json')
+// const require = createRequire(import.meta.url)
+// const packageJson = require('./package.json')
 
 export default defineConfig({
 	source: {
-		define: {
-			'process.env.basename': process.env.NODE_ENV === 'production' ? JSON.stringify(`/${packageJson.name}`) : JSON.stringify('')
-		}
+		entry: './index.ts'
+		// define: {
+		// 	'process.env.basename': process.env.NODE_ENV === 'production' ? JSON.stringify(`/${packageJson.name}`) : JSON.stringify('')
+		// }
 	},
 	output: {
-		assetPrefix: `/${packageJson.name}/`,
+		// assetPrefix: `/${packageJson.name}/`,
 		distPath: {
 			root: 'dist'
+		},
+		library: {
+			type: 'module',
+			export: 'default'
 		}
 	},
 	resolve: {
@@ -23,7 +29,18 @@ export default defineConfig({
 			'@': path.resolve(__dirname, './src')
 		}
 	},
-	plugins: [pluginReact()],
+	plugins: [
+		pluginReact(),
+		rslib({
+			entry: './index.ts',
+			outDir: 'dist',
+			declaration: true,
+			declarationDir: 'dist',
+			emitDeclarationOnly: false,
+			declarationMap: true,
+			sourceMap: true
+		})
+	],
 	module: {
 		rules: [
 			{
@@ -32,10 +49,10 @@ export default defineConfig({
 				type: 'css'
 			}
 		]
-	},
-	html: {
-		meta: {
-			viewport: 'width=device-width, initial-scale=1.0, viewport-fit=cover'
-		}
 	}
+	// html: {
+	// 	meta: {
+	// 		viewport: 'width=device-width, initial-scale=1.0, viewport-fit=cover'
+	// 	}
+	// }
 })
