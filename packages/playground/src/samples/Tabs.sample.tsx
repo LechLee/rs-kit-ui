@@ -1,5 +1,7 @@
-import { Tabs } from 'ui-kit'
-import { ComponentDoc } from '../components/ComponentDoc'
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from 'ui-kit'
+import { Button, Input, Label } from 'ui-kit'
+import { Tabs, TabsContent, TabsList, TabsTrigger } from 'ui-kit'
+import { ComponentDoc } from '@/components/ComponentDoc'
 
 export default function TabsSample() {
 	return (
@@ -7,27 +9,54 @@ export default function TabsSample() {
 			title="Tabs"
 			description="A set of layered sections of content—known as tab panels—that display one panel at a time."
 			component={
-				<div className="w-full max-w-md">
-					<div className="flex flex-col space-y-4">
-						<div className="border-b flex">
-							<div className="px-4 py-2 font-medium border-b-2 border-primary">Account</div>
-							<div className="px-4 py-2 text-muted-foreground">Password</div>
-							<div className="px-4 py-2 text-muted-foreground">Settings</div>
-						</div>
-						<div className="p-4">
-							<div className="space-y-4">
-								<div className="space-y-2">
-									<label className="text-sm font-medium">Name</label>
-									<input className="w-full h-10 rounded-md border border-input bg-background px-3 py-2 text-sm" defaultValue="John Doe" />
+				<Tabs defaultValue="account" className="w-[400px]">
+					<TabsList className="grid w-full grid-cols-2">
+						<TabsTrigger value="account">Account</TabsTrigger>
+						<TabsTrigger value="password">Password</TabsTrigger>
+					</TabsList>
+					<TabsContent value="account">
+						<Card>
+							<CardHeader>
+								<CardTitle>Account</CardTitle>
+								<CardDescription>Make changes to your account here. Click save when you're done.</CardDescription>
+							</CardHeader>
+							<CardContent className="space-y-2">
+								<div className="space-y-1">
+									<Label htmlFor="name">Name</Label>
+									<Input id="name" defaultValue="Pedro Duarte" />
 								</div>
-								<div className="space-y-2">
-									<label className="text-sm font-medium">Email</label>
-									<input className="w-full h-10 rounded-md border border-input bg-background px-3 py-2 text-sm" defaultValue="john@example.com" />
+								<div className="space-y-1">
+									<Label htmlFor="username">Username</Label>
+									<Input id="username" defaultValue="@peduarte" />
 								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+							</CardContent>
+							<CardFooter>
+								<Button>Save changes</Button>
+							</CardFooter>
+						</Card>
+					</TabsContent>
+					<TabsContent value="password">
+						<Card>
+							<CardHeader>
+								<CardTitle>Password</CardTitle>
+								<CardDescription>Change your password here. After saving, you'll be logged out.</CardDescription>
+							</CardHeader>
+							<CardContent className="space-y-2">
+								<div className="space-y-1">
+									<Label htmlFor="current">Current password</Label>
+									<Input id="current" type="password" />
+								</div>
+								<div className="space-y-1">
+									<Label htmlFor="new">New password</Label>
+									<Input id="new" type="password" />
+								</div>
+							</CardContent>
+							<CardFooter>
+								<Button>Save password</Button>
+							</CardFooter>
+						</Card>
+					</TabsContent>
+				</Tabs>
 			}
 		/>
 	)

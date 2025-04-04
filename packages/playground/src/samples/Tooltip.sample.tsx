@@ -1,5 +1,5 @@
-import { Button, Tooltip } from 'ui-kit'
-import { ComponentDoc } from '../components/ComponentDoc'
+import { Button, Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from 'ui-kit'
+import { ComponentDoc } from '@/components/ComponentDoc'
 
 export default function TooltipSample() {
 	return (
@@ -7,11 +7,16 @@ export default function TooltipSample() {
 			title="Tooltip"
 			description="A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it."
 			component={
-				<div className="flex w-full justify-center">
-					<div className="relative">
-						<Button variant="outline">Hover Me</Button>
-					</div>
-				</div>
+				<TooltipProvider>
+					<Tooltip>
+						<TooltipTrigger asChild>
+							<Button variant="outline">Hover</Button>
+						</TooltipTrigger>
+						<TooltipContent>
+							<p>Add to library</p>
+						</TooltipContent>
+					</Tooltip>
+				</TooltipProvider>
 			}
 		/>
 	)

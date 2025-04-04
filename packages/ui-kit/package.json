@@ -79,14 +79,5 @@
     "style-loader": "^4.0.0",
     "tailwind-merge": "^3.0.2",
     "tailwindcss": "^4.0.15"
-  },
-  "overrides": {
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0",
-    "react-is": "^19.1.0",
-    "@radix-ui/*": {
-      "react": "^19.1.0",
-      "react-dom": "^19.1.0"
-    }
   }
 }

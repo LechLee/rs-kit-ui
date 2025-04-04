@@ -1,5 +1,5 @@
 import { Separator } from 'ui-kit'
-import { ComponentDoc } from '../components/ComponentDoc'
+import { ComponentDoc } from '@/components/ComponentDoc'
 
 export default function SeparatorSample() {
 	return (
@@ -7,9 +7,9 @@ export default function SeparatorSample() {
 			title="Separator"
 			description="Visually or semantically separates content."
 			component={
-				<div className="w-full max-w-md space-y-4">
-					<div>
-						<h4 className="text-sm font-medium">Radix Primitives</h4>
+				<div>
+					<div className="space-y-1">
+						<h4 className="text-sm font-medium leading-none">Radix Primitives</h4>
 						<p className="text-sm text-muted-foreground">An open-source UI component library.</p>
 					</div>
 					<Separator className="my-4" />

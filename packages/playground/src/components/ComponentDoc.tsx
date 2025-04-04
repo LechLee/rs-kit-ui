@@ -18,7 +18,7 @@ export function ComponentDoc({ title, description, component, code, props }: Pro
 	const [showCode, setShowCode] = React.useState(false)
 
 	return (
-		<div className="max-w-4xl mx-auto bg-white rounded-lg shadow-lg overflow-hidden mb-8">
+		<div className="mx-auto bg-white rounded-lg shadow-lg overflow-hidden mb-8">
 			<div className="p-6">
 				<h2 className="text-2xl font-bold text-gray-900 mb-2">{title}</h2>
 				<p className="text-gray-600 mb-6">{description}</p>

@@ -46,24 +46,3 @@ function Button({
 }
 
 export { Button, buttonVariants }
-
-// function Button({
-// 	className,
-// 	variant,
-// 	size,
-// 	asChild = false,
-// 	onClick,
-// 	...props
-// }: {
-// 	className?: string
-// 	variant?: string
-// 	size?: 'default' | 'sm' | 'lg' | 'icon' | null
-// 	asChild?: boolean
-// 	onClick?: (event: any) => void
-// }) {
-// 	// const Comp = asChild ? Slot : 'button'
-// 	// return <Comp data-slot="button" className={cn(buttonVariants({ variant, size, className }))} {...props} />
-// 	return <button>hello</button>
-// }
-
-// export { Button, buttonVariants }

@@ -1,5 +1,5 @@
-import { RadioGroup } from 'ui-kit'
-import { ComponentDoc } from '../components/ComponentDoc'
+import { RadioGroup, RadioGroupItem, Label } from 'ui-kit'
+import { ComponentDoc } from '@/components/ComponentDoc'
 
 export default function RadioGroupSample() {
 	return (
@@ -7,22 +7,20 @@ export default function RadioGroupSample() {
 			title="Radio Group"
 			description="A set of checkable buttons where only one can be checked at a time."
 			component={
-				<div className="w-full max-w-md">
-					<div className="flex flex-col space-y-2">
-						<div className="flex items-center space-x-2">
-							<div className="h-4 w-4 rounded-full border border-primary bg-primary/90"></div>
-							<label className="text-sm font-medium">Default</label>
-						</div>
-						<div className="flex items-center space-x-2">
-							<div className="h-4 w-4 rounded-full border"></div>
-							<label className="text-sm font-medium">Comfortable</label>
-						</div>
-						<div className="flex items-center space-x-2">
-							<div className="h-4 w-4 rounded-full border"></div>
-							<label className="text-sm font-medium">Compact</label>
-						</div>
+				<RadioGroup defaultValue="comfortable">
+					<div className="flex items-center space-x-2">
+						<RadioGroupItem value="default" id="r1" />
+						<Label htmlFor="r1">Default</Label>
 					</div>
-				</div>
+					<div className="flex items-center space-x-2">
+						<RadioGroupItem value="comfortable" id="r2" />
+						<Label htmlFor="r2">Comfortable</Label>
+					</div>
+					<div className="flex items-center space-x-2">
+						<RadioGroupItem value="compact" id="r3" />
+						<Label htmlFor="r3">Compact</Label>
+					</div>
+				</RadioGroup>
 			}
 		/>
 	)

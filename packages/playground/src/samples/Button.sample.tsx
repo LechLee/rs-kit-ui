@@ -1,5 +1,6 @@
 import { Button } from 'ui-kit'
-import { ComponentDoc } from '../components/ComponentDoc'
+import { ArrowRightIcon, Loader2Icon, SendIcon } from 'lucide-react'
+import { ComponentDoc } from '@/components/ComponentDoc'
 
 export default function Playground() {
 	return (
@@ -7,43 +8,83 @@ export default function Playground() {
 			title="Button"
 			description="A versatile button component with multiple variants and sizes, built on top of Radix UI Slot primitive."
 			component={
-				<div className="flex flex-wrap gap-4">
-					<Button>Default Button</Button>
-					<Button variant="secondary">Secondary</Button>
-					<Button variant="destructive">Destructive</Button>
-					<Button variant="outline">Outline</Button>
-					<Button variant="ghost">Ghost</Button>
-					<Button variant="link">Link</Button>
+				<div className="flex flex-col gap-6">
+					<div className="flex flex-col items-center gap-2 md:flex-row">
+						<Button>Button</Button>
+						<Button variant="outline">Outline</Button>
+						<Button variant="ghost">Ghost</Button>
+						<Button variant="destructive">Destructive</Button>
+						<Button variant="secondary">Secondary</Button>
+						<Button variant="link">Link</Button>
+						<Button variant="outline">
+							<SendIcon /> Send
+						</Button>
+						<Button variant="outline">
+							Learn More <ArrowRightIcon />
+						</Button>
+						<Button disabled variant="outline">
+							<Loader2Icon className="animate-spin" />
+							Please wait
+						</Button>
+					</div>
+					<div className="flex flex-col items-center gap-2 md:flex-row">
+						<Button size="sm">Small</Button>
+						<Button variant="outline" size="sm">
+							Outline
+						</Button>
+						<Button variant="ghost" size="sm">
+							Ghost
+						</Button>
+						<Button variant="destructive" size="sm">
+							Destructive
+						</Button>
+						<Button variant="secondary" size="sm">
+							Secondary
+						</Button>
+						<Button variant="link" size="sm">
+							Link
+						</Button>
+						<Button variant="outline" size="sm">
+							<SendIcon /> Send
+						</Button>
+						<Button variant="outline" size="sm">
+							Learn More <ArrowRightIcon />
+						</Button>
+						<Button disabled size="sm" variant="outline">
+							<Loader2Icon className="animate-spin" />
+							Please wait
+						</Button>
+					</div>
+					<div className="flex flex-col flex-wrap items-center gap-2 md:flex-row">
+						<Button size="lg">Large</Button>
+						<Button variant="outline" size="lg">
+							Outline
+						</Button>
+						<Button variant="ghost" size="lg">
+							Ghost
+						</Button>
+						<Button variant="destructive" size="lg">
+							Destructive
+						</Button>
+						<Button variant="secondary" size="lg">
+							Secondary
+						</Button>
+						<Button variant="link" size="lg">
+							Link
+						</Button>
+						<Button variant="outline" size="lg">
+							<SendIcon /> Send
+						</Button>
+						<Button variant="outline" size="lg">
+							Learn More <ArrowRightIcon />
+						</Button>
+						<Button disabled size="lg" variant="outline">
+							<Loader2Icon className="animate-spin" />
+							Please wait
+						</Button>
+					</div>
 				</div>
 			}
-			// code={`
-			//         <Button>Default Button</Button>
-			//         <Button variant="secondary">Secondary</Button>
-			//         <Button variant="destructive">Destructive</Button>
-			//         <Button variant="outline">Outline</Button>
-			//         <Button variant="ghost">Ghost</Button>
-			//         <Button variant="link">Link</Button>
-			// `}
-			// props={[
-			// 	{
-			// 		name: 'variant',
-			// 		type: "'default' | 'destructive' | 'outline' | 'secondary' | 'ghost' | 'link'",
-			// 		default: 'default',
-			// 		description: 'The visual style of the button'
-			// 	},
-			// 	{
-			// 		name: 'size',
-			// 		type: "'default' | 'sm' | 'lg' | 'icon'",
-			// 		default: 'default',
-			// 		description: 'The size of the button'
-			// 	},
-			// 	{
-			// 		name: 'asChild',
-			// 		type: 'boolean',
-			// 		default: 'false',
-			// 		description: 'Change the default rendered element for the one passed as a child, merging their props'
-			// 	}
-			// ]}
 		/>
 	)
 }

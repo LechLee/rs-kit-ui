@@ -16,11 +16,15 @@ import BreadcrumbSample from './samples/Breadcrumb.sample'
 import CalendarSample from './samples/Calendar.sample'
 import CardSample from './samples/Card.sample'
 import CarouselSample from './samples/Carousel.sample'
-import ChartSample from './samples/Chart.sample'
+import ChartAreaSample from './samples/ChartArea.sample'
+import ChartBarSample from './samples/ChartBar.sample'
+import ChartLineSample from './samples/ChartLine.sample'
 import CollapsibleSample from './samples/Collapsible.sample'
 import ContextMenuSample from './samples/ContextMenu.sample'
+import ComboboxSample from './samples/Combobox.sample'
 import DrawerSample from './samples/Drawer.sample'
 import DropdownMenuSample from './samples/DropdownMenu.sample'
+import DatePickerSample from './samples/DatePicker.sample'
 import FormSample from './samples/Form.sample'
 import HoverCardSample from './samples/HoverCard.sample'
 import InputOTPSample from './samples/InputOTP.sample'
@@ -111,6 +115,11 @@ const routes = [
 				element: <CalendarSample />
 			},
 			{
+				path: '/datepicker',
+				element: <DatePickerSample />
+			},
+
+			{
 				path: '/card',
 				element: <CardSample />
 			},
@@ -119,8 +128,16 @@ const routes = [
 				element: <CarouselSample />
 			},
 			{
-				path: '/chart',
-				element: <ChartSample />
+				path: '/chart-area',
+				element: <ChartAreaSample />
+			},
+			{
+				path: '/chart-line',
+				element: <ChartLineSample />
+			},
+			{
+				path: '/chart-bar',
+				element: <ChartBarSample />
 			},
 			{
 				path: '/collapsible',
@@ -130,6 +147,11 @@ const routes = [
 				path: '/context-menu',
 				element: <ContextMenuSample />
 			},
+			{
+				path: '/combobox',
+				element: <ComboboxSample />
+			},
+
 			{
 				path: '/drawer',
 				element: <DrawerSample />

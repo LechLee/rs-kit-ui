@@ -1,50 +1,83 @@
-import { Table } from 'ui-kit'
-import { ComponentDoc } from '../components/ComponentDoc'
+import { Table, TableBody, TableCaption, TableCell, TableFooter, TableHead, TableHeader, TableRow } from 'ui-kit'
+import { ComponentDoc } from '@/components/ComponentDoc'
 
+const invoices = [
+	{
+		invoice: 'INV001',
+		paymentStatus: 'Paid',
+		totalAmount: '$250.00',
+		paymentMethod: 'Credit Card'
+	},
+	{
+		invoice: 'INV002',
+		paymentStatus: 'Pending',
+		totalAmount: '$150.00',
+		paymentMethod: 'PayPal'
+	},
+	{
+		invoice: 'INV003',
+		paymentStatus: 'Unpaid',
+		totalAmount: '$350.00',
+		paymentMethod: 'Bank Transfer'
+	},
+	{
+		invoice: 'INV004',
+		paymentStatus: 'Paid',
+		totalAmount: '$450.00',
+		paymentMethod: 'Credit Card'
+	},
+	{
+		invoice: 'INV005',
+		paymentStatus: 'Paid',
+		totalAmount: '$550.00',
+		paymentMethod: 'PayPal'
+	},
+	{
+		invoice: 'INV006',
+		paymentStatus: 'Pending',
+		totalAmount: '$200.00',
+		paymentMethod: 'Bank Transfer'
+	},
+	{
+		invoice: 'INV007',
+		paymentStatus: 'Unpaid',
+		totalAmount: '$300.00',
+		paymentMethod: 'Credit Card'
+	}
+]
 export default function TableSample() {
 	return (
 		<ComponentDoc
 			title="Table"
 			description="A responsive table component for displaying tabular data."
 			component={
-				<div className="w-full max-w-md overflow-auto">
-					<table className="w-full caption-bottom text-sm">
-						<thead className="[&_tr]:border-b">
-							<tr className="border-b">
-								<th className="h-12 px-4 text-left align-middle font-medium">Invoice</th>
-								<th className="h-12 px-4 text-left align-middle font-medium">Status</th>
-								<th className="h-12 px-4 text-left align-middle font-medium">Method</th>
-								<th className="h-12 px-4 text-right align-middle font-medium">Amount</th>
-							</tr>
-						</thead>
-						<tbody className="[&_tr:last-child]:border-0">
-							<tr className="border-b">
-								<td className="p-4 align-middle">#INV001</td>
-								<td className="p-4 align-middle">
-									<span className="inline-flex h-2 w-2 rounded-full bg-green-500"></span> Paid
-								</td>
-								<td className="p-4 align-middle">Credit Card</td>
-								<td className="p-4 align-middle text-right">$250.00</td>
-							</tr>
-							<tr className="border-b">
-								<td className="p-4 align-middle">#INV002</td>
-								<td className="p-4 align-middle">
-									<span className="inline-flex h-2 w-2 rounded-full bg-amber-500"></span> Pending
-								</td>
-								<td className="p-4 align-middle">PayPal</td>
-								<td className="p-4 align-middle text-right">$150.00</td>
-							</tr>
-							<tr>
-								<td className="p-4 align-middle">#INV003</td>
-								<td className="p-4 align-middle">
-									<span className="inline-flex h-2 w-2 rounded-full bg-green-500"></span> Paid
-								</td>
-								<td className="p-4 align-middle">Bank Transfer</td>
-								<td className="p-4 align-middle text-right">$350.00</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
+				<Table>
+					<TableCaption>A list of your recent invoices.</TableCaption>
+					<TableHeader>
+						<TableRow>
+							<TableHead className="w-[100px]">Invoice</TableHead>
+							<TableHead>Status</TableHead>
+							<TableHead>Method</TableHead>
+							<TableHead className="text-right">Amount</TableHead>
+						</TableRow>
+					</TableHeader>
+					<TableBody>
+						{invoices.map((invoice) => (
+							<TableRow key={invoice.invoice}>
+								<TableCell className="font-medium">{invoice.invoice}</TableCell>
+								<TableCell>{invoice.paymentStatus}</TableCell>
+								<TableCell>{invoice.paymentMethod}</TableCell>
+								<TableCell className="text-right">{invoice.totalAmount}</TableCell>
+							</TableRow>
+						))}
+					</TableBody>
+					<TableFooter>
+						<TableRow>
+							<TableCell colSpan={3}>Total</TableCell>
+							<TableCell className="text-right">$2,500.00</TableCell>
+						</TableRow>
+					</TableFooter>
+				</Table>
 			}
 		/>
 	)

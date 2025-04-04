@@ -7,6 +7,9 @@
     "build": "pnpm -r build",
     "build:ui-kit": "pnpm --filter ui-kit build",
     "playground": "pnpm --filter playground dev",
-    "start": "pnpm build:ui-kit && (pnpm --filter ui-kit dev & sleep 2 && pnpm --filter playground dev)"
+    "start": "pnpm build:ui-kit && (pnpm --filter ui-kit dev & sleep 2 && pnpm --filter playground dev)",
+    "dev": "pnpm --filter ui-kit dev & sleep 1 && pnpm --filter playground dev",
+    "clean": "rm -rf node_modules && rm -rf packages/*/node_modules && rm -rf packages/*/dist",
+    "postinstall": "pnpm build"
   }
 }

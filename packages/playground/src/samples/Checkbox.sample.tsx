@@ -1,5 +1,5 @@
-import { Checkbox } from 'ui-kit'
-import { ComponentDoc } from '../components/ComponentDoc'
+import { Checkbox, Label } from 'ui-kit'
+import { ComponentDoc } from '@/components/ComponentDoc'
 
 export default function CheckboxSample() {
 	return (
@@ -7,25 +7,33 @@ export default function CheckboxSample() {
 			title="Checkbox"
 			description="A control that allows the user to toggle between checked and not checked."
 			component={
-				<div className="flex flex-col gap-4">
-					<div className="flex items-center space-x-2">
+				<div className="flex flex-col gap-6">
+					<div className="flex items-center gap-3">
 						<Checkbox id="terms" />
-						<label htmlFor="terms" className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">
-							Accept terms and conditions
-						</label>
+						<Label htmlFor="terms">Accept terms and conditions</Label>
 					</div>
-					<div className="flex items-center space-x-2">
-						<Checkbox id="disabled" disabled />
-						<label htmlFor="disabled" className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">
-							Disabled
-						</label>
+					<div className="flex items-start gap-3">
+						<Checkbox id="terms-2" defaultChecked />
+						<div className="grid gap-2">
+							<Label htmlFor="terms-2">Accept terms and conditions</Label>
+							<p className="text-muted-foreground text-sm">By clicking this checkbox, you agree to the terms and conditions.</p>
+						</div>
 					</div>
-					<div className="flex items-center space-x-2">
-						<Checkbox id="checked" defaultChecked />
-						<label htmlFor="checked" className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">
-							Default checked
-						</label>
+					<div className="flex items-start gap-3">
+						<Checkbox id="toggle" disabled />
+						<Label htmlFor="toggle">Enable notifications</Label>
 					</div>
+					<Label className="hover:bg-accent/50 flex items-start gap-3 rounded-lg border p-3 has-[[aria-checked=true]]:border-blue-600 has-[[aria-checked=true]]:bg-blue-50 dark:has-[[aria-checked=true]]:border-blue-900 dark:has-[[aria-checked=true]]:bg-blue-950">
+						<Checkbox
+							id="toggle-2"
+							defaultChecked
+							className="data-[state=checked]:border-blue-600 data-[state=checked]:bg-blue-600 data-[state=checked]:text-white dark:data-[state=checked]:border-blue-700 dark:data-[state=checked]:bg-blue-700"
+						/>
+						<div className="grid gap-1.5 font-normal">
+							<p className="text-sm leading-none font-medium">Enable notifications</p>
+							<p className="text-muted-foreground text-sm">You can enable or disable notifications at any time.</p>
+						</div>
+					</Label>
 				</div>
 			}
 		/>

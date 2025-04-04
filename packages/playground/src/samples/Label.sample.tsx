@@ -1,5 +1,5 @@
-import { Checkbox, Label } from 'ui-kit'
-import { ComponentDoc } from '../components/ComponentDoc'
+import { Checkbox, Label, Input, Textarea } from 'ui-kit'
+import { ComponentDoc } from '@/components/ComponentDoc'
 
 export default function LabelSample() {
 	return (
@@ -7,14 +7,22 @@ export default function LabelSample() {
 			title="Label"
 			description="Renders an accessible label associated with controls."
 			component={
-				<div className="flex flex-col space-y-4">
-					<div className="flex items-center space-x-2">
-						<Checkbox id="terms" />
-						<Label htmlFor="terms">Accept terms and conditions</Label>
+				<div className="grid w-full max-w-sm gap-6">
+					<div className="flex items-center gap-3">
+						<Checkbox id="label-demo-terms" />
+						<Label htmlFor="label-demo-terms">Accept terms and conditions</Label>
 					</div>
-					<div className="space-y-2">
-						<Label htmlFor="email">Email</Label>
-						<input id="email" type="email" className="w-full rounded-md border px-3 py-2" placeholder="example@example.com" />
+					<div className="grid gap-3">
+						<Label htmlFor="label-demo-username">Username</Label>
+						<Input id="label-demo-username" placeholder="Username" />
+					</div>
+					<div className="group grid gap-3" data-disabled={true}>
+						<Label htmlFor="label-demo-disabled">Disabled</Label>
+						<Input id="label-demo-disabled" placeholder="Disabled" disabled />
+					</div>
+					<div className="grid gap-3">
+						<Label htmlFor="label-demo-message">Message</Label>
+						<Textarea id="label-demo-message" placeholder="Message" />
 					</div>
 				</div>
 			}

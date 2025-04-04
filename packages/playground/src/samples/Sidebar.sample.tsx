@@ -1,5 +1,47 @@
-import { Sidebar } from 'ui-kit'
-import { ComponentDoc } from '../components/ComponentDoc'
+import { Calendar, Home, Inbox, Search, Settings } from 'lucide-react'
+import {
+	Sidebar,
+	SidebarContent,
+	SidebarGroup,
+	SidebarGroupContent,
+	SidebarGroupLabel,
+	SidebarInset,
+	SidebarMenu,
+	SidebarMenuButton,
+	SidebarMenuItem,
+	SidebarProvider,
+	SidebarTrigger
+} from 'ui-kit'
+import { ComponentDoc } from '@/components/ComponentDoc'
+
+// Menu items.
+const items = [
+	{
+		title: 'Home',
+		url: '#',
+		icon: Home
+	},
+	{
+		title: 'Inbox',
+		url: '#',
+		icon: Inbox
+	},
+	{
+		title: 'Calendar',
+		url: '#',
+		icon: Calendar
+	},
+	{
+		title: 'Search',
+		url: '#',
+		icon: Search
+	},
+	{
+		title: 'Settings',
+		url: '#',
+		icon: Settings
+	}
+]
 
 export default function SidebarSample() {
 	return (
@@ -7,31 +49,34 @@ export default function SidebarSample() {
 			title="Sidebar"
 			description="A responsive sidebar navigation component."
 			component={
-				<div className="w-full max-w-xs">
-					<div className="w-full h-[300px] border rounded-md overflow-hidden flex">
-						<div className="w-[200px] bg-muted h-full border-r p-4">
-							<div className="font-medium mb-4">Navigation</div>
-							<div className="space-y-2">
-								<div className="flex items-center space-x-2 p-2 rounded-md bg-primary/10 font-medium">
-									<span>Dashboard</span>
-								</div>
-								<div className="flex items-center space-x-2 p-2 rounded-md hover:bg-muted">
-									<span>Settings</span>
-								</div>
-								<div className="flex items-center space-x-2 p-2 rounded-md hover:bg-muted">
-									<span>Users</span>
-								</div>
-								<div className="flex items-center space-x-2 p-2 rounded-md hover:bg-muted">
-									<span>Analytics</span>
-								</div>
-							</div>
-						</div>
-						<div className="flex-1 p-4">
-							<div className="font-medium mb-2">Dashboard</div>
-							<p className="text-sm text-muted-foreground">Overview of your account</p>
-						</div>
-					</div>
-				</div>
+				<SidebarProvider>
+					<Sidebar>
+						<SidebarContent>
+							<SidebarGroup>
+								<SidebarGroupLabel>Application</SidebarGroupLabel>
+								<SidebarGroupContent>
+									<SidebarMenu>
+										{items.map((item) => (
+											<SidebarMenuItem key={item.title}>
+												<SidebarMenuButton asChild>
+													<a href={item.url}>
+														<item.icon />
+														<span>{item.title}</span>
+													</a>
+												</SidebarMenuButton>
+											</SidebarMenuItem>
+										))}
+									</SidebarMenu>
+								</SidebarGroupContent>
+							</SidebarGroup>
+						</SidebarContent>
+					</Sidebar>
+					<SidebarInset>
+						<header className="flex items-center justify-between px-4 h-12">
+							<SidebarTrigger />
+						</header>
+					</SidebarInset>
+				</SidebarProvider>
 			}
 		/>
 	)

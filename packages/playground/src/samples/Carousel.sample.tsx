@@ -1,5 +1,5 @@
-import { Carousel } from 'ui-kit'
-import { ComponentDoc } from '../components/ComponentDoc'
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious, Card, CardContent } from 'ui-kit'
+import { ComponentDoc } from '@/components/ComponentDoc'
 
 export default function CarouselSample() {
 	return (
@@ -7,23 +7,65 @@ export default function CarouselSample() {
 			title="Carousel"
 			description="A carousel component for cycling through elements."
 			component={
-				<Carousel className="w-full max-w-md">
-					<div className="relative h-64 w-full">
-						<div className="absolute inset-0 bg-blue-100 rounded-md flex items-center justify-center">
-							<span className="text-2xl font-bold">Slide 1</span>
-						</div>
-					</div>
-					<div className="relative h-64 w-full">
-						<div className="absolute inset-0 bg-green-100 rounded-md flex items-center justify-center">
-							<span className="text-2xl font-bold">Slide 2</span>
-						</div>
-					</div>
-					<div className="relative h-64 w-full">
-						<div className="absolute inset-0 bg-yellow-100 rounded-md flex items-center justify-center">
-							<span className="text-2xl font-bold">Slide 3</span>
-						</div>
-					</div>
-				</Carousel>
+				<div className="w-full flex-col items-center gap-4 md:flex">
+					<Carousel className="max-w-sm *:data-[slot=carousel-next]:hidden *:data-[slot=carousel-previous]:hidden *:data-[slot=carousel-next]:md:inline-flex *:data-[slot=carousel-previous]:md:inline-flex">
+						<CarouselContent>
+							{Array.from({ length: 5 }).map((_, index) => (
+								<CarouselItem key={index}>
+									<div className="p-1">
+										<Card>
+											<CardContent className="flex aspect-square items-center justify-center p-6">
+												<span className="text-4xl font-semibold">{index + 1}</span>
+											</CardContent>
+										</Card>
+									</div>
+								</CarouselItem>
+							))}
+						</CarouselContent>
+						<CarouselPrevious />
+						<CarouselNext />
+					</Carousel>
+
+					<Carousel
+						className="max-w-sm *:data-[slot=carousel-next]:hidden *:data-[slot=carousel-previous]:hidden *:data-[slot=carousel-next]:md:inline-flex *:data-[slot=carousel-previous]:md:inline-flex"
+						opts={{
+							align: 'start'
+						}}
+					>
+						<CarouselContent>
+							{Array.from({ length: 5 }).map((_, index) => (
+								<CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+									<div className="p-1">
+										<Card>
+											<CardContent className="flex aspect-square items-center justify-center p-6">
+												<span className="text-3xl font-semibold">{index + 1}</span>
+											</CardContent>
+										</Card>
+									</div>
+								</CarouselItem>
+							))}
+						</CarouselContent>
+						<CarouselPrevious />
+						<CarouselNext />
+					</Carousel>
+					<Carousel className="max-w-sm *:data-[slot=carousel-next]:hidden *:data-[slot=carousel-previous]:hidden *:data-[slot=carousel-next]:md:inline-flex *:data-[slot=carousel-previous]:md:inline-flex">
+						<CarouselContent className="-ml-1">
+							{Array.from({ length: 5 }).map((_, index) => (
+								<CarouselItem key={index} className="pl-1 md:basis-1/2">
+									<div className="p-1">
+										<Card>
+											<CardContent className="flex aspect-square items-center justify-center p-6">
+												<span className="text-2xl font-semibold">{index + 1}</span>
+											</CardContent>
+										</Card>
+									</div>
+								</CarouselItem>
+							))}
+						</CarouselContent>
+						<CarouselPrevious />
+						<CarouselNext />
+					</Carousel>
+				</div>
 			}
 		/>
 	)

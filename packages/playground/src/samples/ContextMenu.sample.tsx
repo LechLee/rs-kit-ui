@@ -1,5 +1,20 @@
-import { ContextMenu } from 'ui-kit'
-import { ComponentDoc } from '../components/ComponentDoc'
+import { Code2Icon, PlusIcon, TrashIcon } from 'lucide-react'
+import {
+	ContextMenu,
+	ContextMenuCheckboxItem,
+	ContextMenuContent,
+	ContextMenuItem,
+	ContextMenuLabel,
+	ContextMenuRadioGroup,
+	ContextMenuRadioItem,
+	ContextMenuSeparator,
+	ContextMenuShortcut,
+	ContextMenuSub,
+	ContextMenuSubContent,
+	ContextMenuSubTrigger,
+	ContextMenuTrigger
+} from 'ui-kit'
+import { ComponentDoc } from '@/components/ComponentDoc'
 
 export default function ContextMenuSample() {
 	return (
@@ -7,9 +22,59 @@ export default function ContextMenuSample() {
 			title="Context Menu"
 			description="Displays a menu located at the pointer, triggered by a right-click or a long-press."
 			component={
-				<div className="flex items-center justify-center">
-					<div className="relative flex h-[150px] w-[300px] items-center justify-center rounded-md border border-dashed text-sm">Right click here</div>
-				</div>
+				<ContextMenu>
+					<ContextMenuTrigger className="flex h-[150px] w-[300px] items-center justify-center rounded-md border border-dashed text-sm">Right click here</ContextMenuTrigger>
+					<ContextMenuContent className="w-64">
+						<ContextMenuItem inset>
+							Back
+							<ContextMenuShortcut>⌘[</ContextMenuShortcut>
+						</ContextMenuItem>
+						<ContextMenuItem inset disabled>
+							Forward
+							<ContextMenuShortcut>⌘]</ContextMenuShortcut>
+						</ContextMenuItem>
+						<ContextMenuItem inset>
+							Reload
+							<ContextMenuShortcut>⌘R</ContextMenuShortcut>
+						</ContextMenuItem>
+						<ContextMenuSub>
+							<ContextMenuSubTrigger inset>More Tools</ContextMenuSubTrigger>
+							<ContextMenuSubContent className="w-48">
+								<ContextMenuItem inset>
+									Save Page As...
+									<ContextMenuShortcut>⇧⌘S</ContextMenuShortcut>
+								</ContextMenuItem>
+								<ContextMenuItem>
+									<PlusIcon />
+									Create Shortcut...
+								</ContextMenuItem>
+								<ContextMenuItem inset>Name Window...</ContextMenuItem>
+								<ContextMenuSeparator />
+								<ContextMenuItem>
+									<Code2Icon />
+									Developer Tools
+								</ContextMenuItem>
+								<ContextMenuSeparator />
+								<ContextMenuItem variant="destructive">
+									<TrashIcon />
+									Delete
+								</ContextMenuItem>
+							</ContextMenuSubContent>
+						</ContextMenuSub>
+						<ContextMenuSeparator />
+						<ContextMenuCheckboxItem checked>
+							Show Bookmarks Bar
+							<ContextMenuShortcut>⌘⇧B</ContextMenuShortcut>
+						</ContextMenuCheckboxItem>
+						<ContextMenuCheckboxItem>Show Full URLs</ContextMenuCheckboxItem>
+						<ContextMenuSeparator />
+						<ContextMenuRadioGroup value="pedro">
+							<ContextMenuLabel inset>People</ContextMenuLabel>
+							<ContextMenuRadioItem value="pedro">Pedro Duarte</ContextMenuRadioItem>
+							<ContextMenuRadioItem value="colm">Colm Tuite</ContextMenuRadioItem>
+						</ContextMenuRadioGroup>
+					</ContextMenuContent>
+				</ContextMenu>
 			}
 		/>
 	)

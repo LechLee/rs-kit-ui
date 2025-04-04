@@ -1,11 +1,7 @@
-import { ComponentDoc } from './components/ComponentDoc'
-import { Button } from 'ui-kit'
-
-import { BookOpen } from 'lucide-react'
+import { Outlet, Link, useLocation } from 'react-router'
 
 import 'ui-kit/dist/index.css'
 import './styles.css'
-import { Outlet, Link, useLocation } from 'react-router'
 
 function App() {
 	const location = useLocation()
@@ -16,6 +12,7 @@ function App() {
 		Form: [
 			{ name: 'Button', path: '/button' },
 			{ name: 'Checkbox', path: '/checkbox' },
+			{ name: 'Combobox', path: '/combobox' },
 			{ name: 'Input', path: '/input' },
 			{ name: 'Input OTP', path: '/input-otp' },
 			{ name: 'Label', path: '/label' },
@@ -57,8 +54,12 @@ function App() {
 			{ name: 'Badge', path: '/badge' },
 			{ name: 'Calendar', path: '/calendar' },
 			{ name: 'Carousel', path: '/carousel' },
-			{ name: 'Chart', path: '/chart' },
 			{ name: 'Table', path: '/table' }
+		],
+		Chart: [
+			{ name: 'Chart Area', path: '/chart-area' },
+			{ name: 'Chart Bar', path: '/chart-bar' },
+			{ name: 'Chart Line', path: '/chart-line' }
 		],
 		Overlay: [
 			{ name: 'Command', path: '/command' },

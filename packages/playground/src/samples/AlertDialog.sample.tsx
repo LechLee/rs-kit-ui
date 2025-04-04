@@ -10,7 +10,7 @@ import {
 	AlertDialogTrigger,
 	Button
 } from 'ui-kit'
-import { ComponentDoc } from '../components/ComponentDoc'
+import { ComponentDoc } from '@/components/ComponentDoc'
 
 export default function AlertDialogSample() {
 	return (
@@ -20,7 +20,7 @@ export default function AlertDialogSample() {
 			component={
 				<AlertDialog>
 					<AlertDialogTrigger asChild>
-						<Button variant="outline">Show Alert Dialog</Button>
+						<Button variant="outline">Show Dialog</Button>
 					</AlertDialogTrigger>
 					<AlertDialogContent>
 						<AlertDialogHeader>
