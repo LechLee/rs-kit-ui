@@ -18,11 +18,12 @@ export default defineConfig({
 			bundle: true,
 			dts: true,
 			format: 'esm',
-			sourcemap: true
+			sourcemap: true,
+			externals: ['react', 'react-dom']
 		}
 	],
 	output: {
 		target: 'web'
-	}
-	// plugins: [pluginReact()]
+	},
+	plugins: [pluginReact()]
 })
