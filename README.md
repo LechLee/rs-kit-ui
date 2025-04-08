@@ -63,3 +63,10 @@ pnpm build
 ```bash
 pnpm clean
 ```
+
+
+### Publish Package
+```bash
+cd packages/ui-kit
+npm publish --access public
+```
