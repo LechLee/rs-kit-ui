@@ -1,6 +1,6 @@
 {
   "name": "@rs-kit/ui-kit",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": false,
   "main": "./dist/index.mjs",
   "module": "./dist/index.mjs",
