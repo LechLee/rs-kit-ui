@@ -1,4 +1,4 @@
-import { Button, Popover, PopoverContent, PopoverTrigger, Label, Input } from 'ui-kit'
+import { Button, Popover, PopoverContent, PopoverTrigger, Label, Input } from '@rs-kit/ui-kit'
 import { ComponentDoc } from '@/components/ComponentDoc'
 
 export default function PopoverSample() {

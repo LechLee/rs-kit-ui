@@ -1,4 +1,4 @@
-import { Table, TableBody, TableCaption, TableCell, TableFooter, TableHead, TableHeader, TableRow } from 'ui-kit'
+import { Table, TableBody, TableCaption, TableCell, TableFooter, TableHead, TableHeader, TableRow } from '@rs-kit/ui-kit'
 import { ComponentDoc } from '@/components/ComponentDoc'
 
 const invoices = [

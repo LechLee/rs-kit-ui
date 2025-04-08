@@ -1,4 +1,4 @@
-import { Checkbox, Label, Input, Textarea } from 'ui-kit'
+import { Checkbox, Label, Input, Textarea } from '@rs-kit/ui-kit'
 import { ComponentDoc } from '@/components/ComponentDoc'
 
 export default function LabelSample() {

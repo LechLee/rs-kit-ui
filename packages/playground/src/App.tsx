@@ -1,6 +1,6 @@
 import { Outlet, Link, useLocation } from 'react-router'
 
-import 'ui-kit/dist/index.css'
+import '@rs-kit/ui-kit/dist/index.css'
 import './styles.css'
 
 function App() {

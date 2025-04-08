@@ -1,4 +1,4 @@
-import { Input } from 'ui-kit'
+import { Input } from '@rs-kit/ui-kit'
 import { ComponentDoc } from '@/components/ComponentDoc'
 
 export default function InputSample() {

@@ -1,4 +1,4 @@
-import { Badge } from 'ui-kit'
+import { Badge } from '@rs-kit/ui-kit'
 import { AlertCircleIcon, ArrowRightIcon, CheckIcon } from 'lucide-react'
 import { ComponentDoc } from '@/components/ComponentDoc'
 

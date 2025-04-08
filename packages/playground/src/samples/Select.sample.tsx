@@ -1,4 +1,4 @@
-import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigger, SelectValue } from 'ui-kit'
+import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigger, SelectValue } from '@rs-kit/ui-kit'
 import { ComponentDoc } from '@/components/ComponentDoc'
 
 export default function SelectSample() {

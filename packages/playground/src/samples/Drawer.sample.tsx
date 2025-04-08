@@ -18,7 +18,7 @@ import {
 	DrawerHeader,
 	DrawerTitle,
 	DrawerTrigger
-} from 'ui-kit'
+} from '@rs-kit/ui-kit'
 import { Minus, Plus } from 'lucide-react'
 import { Bar, BarChart, ResponsiveContainer } from 'recharts'
 import { ComponentDoc } from '@/components/ComponentDoc'

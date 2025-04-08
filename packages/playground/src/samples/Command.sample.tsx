@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Calculator, Calendar, CreditCard, Settings, Smile, User } from 'lucide-react'
-import { CommandDialog, CommandEmpty, CommandGroup, CommandInput, CommandItem, CommandList, CommandSeparator, CommandShortcut } from 'ui-kit'
+import { CommandDialog, CommandEmpty, CommandGroup, CommandInput, CommandItem, CommandList, CommandSeparator, CommandShortcut } from '@rs-kit/ui-kit'
 import { ComponentDoc } from '@/components/ComponentDoc'
 
 export default function CommandSample() {

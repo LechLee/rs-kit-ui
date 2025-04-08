@@ -1,5 +1,5 @@
 import { CalendarIcon } from 'lucide-react'
-import { HoverCard, HoverCardContent, HoverCardTrigger, Avatar, AvatarFallback, AvatarImage, Button } from 'ui-kit'
+import { HoverCard, HoverCardContent, HoverCardTrigger, Avatar, AvatarFallback, AvatarImage, Button } from '@rs-kit/ui-kit'
 import { ComponentDoc } from '@/components/ComponentDoc'
 
 export default function HoverCardSample() {

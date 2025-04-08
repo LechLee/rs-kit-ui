@@ -1,5 +1,5 @@
 import { AlertCircleIcon, BookmarkCheckIcon, CheckCircle2Icon, GiftIcon, PopcornIcon, ShieldAlertIcon } from 'lucide-react'
-import { Button, Alert, AlertDescription, AlertTitle } from 'ui-kit'
+import { Button, Alert, AlertDescription, AlertTitle } from '@rs-kit/ui-kit'
 import { ComponentDoc } from '@/components/ComponentDoc'
 
 export default function AlertSample() {

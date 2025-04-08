@@ -1,4 +1,4 @@
-import { ResizableHandle, ResizablePanel, ResizablePanelGroup } from 'ui-kit'
+import { ResizableHandle, ResizablePanel, ResizablePanelGroup } from '@rs-kit/ui-kit'
 import { ComponentDoc } from '@/components/ComponentDoc'
 
 export default function ResizableSample() {

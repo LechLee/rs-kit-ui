@@ -18,7 +18,7 @@ import {
 	DropdownMenuSubContent,
 	DropdownMenuSubTrigger,
 	DropdownMenuTrigger
-} from 'ui-kit'
+} from '@rs-kit/ui-kit'
 import {
 	BadgeCheckIcon,
 	BellIcon,

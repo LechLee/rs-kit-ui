@@ -1,4 +1,4 @@
-import { AspectRatio } from 'ui-kit'
+import { AspectRatio } from '@rs-kit/ui-kit'
 import { ComponentDoc } from '@/components/ComponentDoc'
 
 export default function AspectRatioSample() {

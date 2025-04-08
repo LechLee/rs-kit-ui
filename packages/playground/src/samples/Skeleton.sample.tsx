@@ -1,4 +1,4 @@
-import { Skeleton } from 'ui-kit'
+import { Skeleton } from '@rs-kit/ui-kit'
 import { ComponentDoc } from '@/components/ComponentDoc'
 
 export default function SkeletonSample() {

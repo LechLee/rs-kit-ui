@@ -5,7 +5,7 @@ import { addDays, format } from 'date-fns'
 import { CalendarIcon } from 'lucide-react'
 import { DateRange } from 'react-day-picker'
 
-import { Button, Calendar, Popover, PopoverContent, PopoverTrigger, cn } from 'ui-kit'
+import { Button, Calendar, Popover, PopoverContent, PopoverTrigger, cn } from '@rs-kit/ui-kit'
 import { ComponentDoc } from '@/components/ComponentDoc'
 
 export default function DatePickerDemo() {

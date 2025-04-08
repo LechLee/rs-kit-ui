@@ -1,4 +1,4 @@
-import { Switch, Label } from 'ui-kit'
+import { Switch, Label } from '@rs-kit/ui-kit'
 import { ComponentDoc } from '@/components/ComponentDoc'
 
 export default function SwitchSample() {

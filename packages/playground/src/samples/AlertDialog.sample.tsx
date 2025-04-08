@@ -9,7 +9,7 @@ import {
 	AlertDialogTitle,
 	AlertDialogTrigger,
 	Button
-} from 'ui-kit'
+} from '@rs-kit/ui-kit'
 import { ComponentDoc } from '@/components/ComponentDoc'
 
 export default function AlertDialogSample() {

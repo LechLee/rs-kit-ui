@@ -1,5 +1,5 @@
 import { toast } from 'sonner'
-import { Button, Toaster } from 'ui-kit'
+import { Button, Toaster } from '@rs-kit/ui-kit'
 import { ComponentDoc } from '@/components/ComponentDoc'
 
 export default function SonnerSample() {

@@ -1,4 +1,4 @@
-import { ScrollArea, Separator } from 'ui-kit'
+import { ScrollArea, Separator } from '@rs-kit/ui-kit'
 import { ComponentDoc } from '@/components/ComponentDoc'
 
 const tags = Array.from({ length: 50 }).map((_, i, a) => `v1.2.0-beta.${a.length - i}`)

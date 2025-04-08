@@ -11,7 +11,7 @@ import {
 	SidebarMenuItem,
 	SidebarProvider,
 	SidebarTrigger
-} from 'ui-kit'
+} from '@rs-kit/ui-kit'
 import { ComponentDoc } from '@/components/ComponentDoc'
 
 // Menu items.

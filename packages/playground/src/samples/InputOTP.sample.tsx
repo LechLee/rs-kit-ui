@@ -1,4 +1,4 @@
-import { InputOTP, InputOTPGroup, InputOTPSeparator, InputOTPSlot, Label } from 'ui-kit'
+import { InputOTP, InputOTPGroup, InputOTPSeparator, InputOTPSlot, Label } from '@rs-kit/ui-kit'
 import { ComponentDoc } from '@/components/ComponentDoc'
 import { useState } from 'react'
 

@@ -7,11 +7,11 @@ import { useForm } from 'react-hook-form'
 import { toast } from 'sonner'
 import { z } from 'zod'
 
-import { Input, Button, Calendar, Checkbox, Switch, Textarea, cn } from 'ui-kit'
-import { Form, FormControl, FormDescription, FormField, FormItem, FormLabel, FormMessage } from 'ui-kit'
-import { Popover, PopoverContent, PopoverTrigger } from 'ui-kit'
-import { RadioGroup, RadioGroupItem } from 'ui-kit'
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from 'ui-kit'
+import { Input, Button, Calendar, Checkbox, Switch, Textarea, cn } from '@rs-kit/ui-kit'
+import { Form, FormControl, FormDescription, FormField, FormItem, FormLabel, FormMessage } from '@rs-kit/ui-kit'
+import { Popover, PopoverContent, PopoverTrigger } from '@rs-kit/ui-kit'
+import { RadioGroup, RadioGroupItem } from '@rs-kit/ui-kit'
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@rs-kit/ui-kit'
 
 const items = [
 	{

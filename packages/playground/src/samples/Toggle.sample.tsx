@@ -1,5 +1,5 @@
 import { Bold } from 'lucide-react'
-import { Toggle } from 'ui-kit'
+import { Toggle } from '@rs-kit/ui-kit'
 import { ComponentDoc } from '@/components/ComponentDoc'
 
 export default function ToggleSample() {

@@ -1,4 +1,4 @@
-// import { NavigationMenu } from 'ui-kit'
+// import { NavigationMenu } from '@rs-kit/ui-kit'
 // import { ComponentDoc } from '@/components/ComponentDoc'
 
 // export default function NavigationMenuSample() {
@@ -21,7 +21,17 @@
 
 import * as React from 'react'
 
-import { Icons, NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, NavigationMenuTrigger, navigationMenuTriggerStyle, cn } from 'ui-kit'
+import {
+	Icons,
+	NavigationMenu,
+	NavigationMenuContent,
+	NavigationMenuItem,
+	NavigationMenuLink,
+	NavigationMenuList,
+	NavigationMenuTrigger,
+	navigationMenuTriggerStyle,
+	cn
+} from '@rs-kit/ui-kit'
 
 const components: { title: string; href: string; description: string }[] = [
 	{

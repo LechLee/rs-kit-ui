@@ -1,5 +1,5 @@
 import { Bold, Italic, Underline } from 'lucide-react'
-import { ToggleGroup, ToggleGroupItem } from 'ui-kit'
+import { ToggleGroup, ToggleGroupItem } from '@rs-kit/ui-kit'
 import { ComponentDoc } from '@/components/ComponentDoc'
 
 export default function ToggleGroupSample() {

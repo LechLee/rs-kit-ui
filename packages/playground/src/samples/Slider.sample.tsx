@@ -1,4 +1,4 @@
-import { Slider, cn } from 'ui-kit'
+import { Slider, cn } from '@rs-kit/ui-kit'
 import { ComponentDoc } from '@/components/ComponentDoc'
 
 export default function SliderSample() {

@@ -19,7 +19,7 @@ import {
 	PopoverContent,
 	PopoverTrigger,
 	cn
-} from 'ui-kit'
+} from '@rs-kit/ui-kit'
 import { ComponentDoc } from '@/components/ComponentDoc'
 
 const frameworks = [

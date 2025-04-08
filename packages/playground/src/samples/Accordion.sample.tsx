@@ -1,4 +1,4 @@
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from 'ui-kit'
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@rs-kit/ui-kit'
 import { ComponentDoc } from '@/components/ComponentDoc'
 
 export default function AccordionSample() {

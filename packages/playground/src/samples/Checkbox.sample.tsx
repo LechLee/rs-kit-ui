@@ -1,4 +1,4 @@
-import { Checkbox, Label } from 'ui-kit'
+import { Checkbox, Label } from '@rs-kit/ui-kit'
 import { ComponentDoc } from '@/components/ComponentDoc'
 
 export default function CheckboxSample() {

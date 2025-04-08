@@ -1,5 +1,5 @@
 import { BedIcon, BathIcon, LandPlotIcon } from 'lucide-react'
-import { Button, Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle, Avatar, AvatarFallback, AvatarImage, Label, Input, Badge } from 'ui-kit'
+import { Button, Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle, Avatar, AvatarFallback, AvatarImage, Label, Input, Badge } from '@rs-kit/ui-kit'
 import { ComponentDoc } from '@/components/ComponentDoc'
 
 export default function CardSample() {

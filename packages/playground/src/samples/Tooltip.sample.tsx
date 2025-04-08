@@ -1,4 +1,4 @@
-import { Button, Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from 'ui-kit'
+import { Button, Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@rs-kit/ui-kit'
 import { ComponentDoc } from '@/components/ComponentDoc'
 
 export default function TooltipSample() {

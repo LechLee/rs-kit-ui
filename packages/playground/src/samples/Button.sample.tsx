@@ -1,4 +1,4 @@
-import { Button } from 'ui-kit'
+import { Button } from '@rs-kit/ui-kit'
 import { ArrowRightIcon, Loader2Icon, SendIcon } from 'lucide-react'
 import { ComponentDoc } from '@/components/ComponentDoc'
 

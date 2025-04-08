@@ -1,4 +1,4 @@
-import { Progress } from 'ui-kit'
+import { Progress } from '@rs-kit/ui-kit'
 import { ComponentDoc } from '@/components/ComponentDoc'
 import { useEffect, useState } from 'react'
 

@@ -1,6 +1,6 @@
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from 'ui-kit'
-import { Button, Input, Label } from 'ui-kit'
-import { Tabs, TabsContent, TabsList, TabsTrigger } from 'ui-kit'
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@rs-kit/ui-kit'
+import { Button, Input, Label } from '@rs-kit/ui-kit'
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@rs-kit/ui-kit'
 import { ComponentDoc } from '@/components/ComponentDoc'
 
 export default function TabsSample() {

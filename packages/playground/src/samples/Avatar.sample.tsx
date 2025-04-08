@@ -1,4 +1,4 @@
-import { Avatar, AvatarImage, AvatarFallback } from 'ui-kit'
+import { Avatar, AvatarImage, AvatarFallback } from '@rs-kit/ui-kit'
 import { ComponentDoc } from '@/components/ComponentDoc'
 
 export default function AvatarSample() {

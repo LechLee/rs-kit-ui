@@ -1,5 +1,5 @@
 import { ChevronsUpDown } from 'lucide-react'
-import { Collapsible, CollapsibleContent, CollapsibleTrigger, Button } from 'ui-kit'
+import { Collapsible, CollapsibleContent, CollapsibleTrigger, Button } from '@rs-kit/ui-kit'
 import { ComponentDoc } from '@/components/ComponentDoc'
 import { useState } from 'react'
 
