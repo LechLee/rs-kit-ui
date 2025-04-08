@@ -1,36 +1,48 @@
-# UI Kit Monorepo with Rspack and PNPM Workspaces
+# Rs UI Kit
 
-This is a monorepo containing a UI Kit based on Shadcn UI components and a documentation site built with React and TypeScript, all bundled with Rspack for fast builds.
+Shadcn UI component library powered by Rspack for fast builds.
 
 ## Project Structure
 
 ```
-has-ui-kit-v4/
 ├── packages/
-│   ├── ui-kit/         # UI Kit package with Shadcn UI components
-│   │   ├── src/        # Source code for UI Kit components
+│   ├── ui-kit/         # Core UI component library based on Radix UI primitives
+│   │   ├── components/ # UI components
+│   │   ├── hooks/      # Custom React hooks
+│   │   ├── lib/        # Utility functions and helpers
 │   │   └── ...
-│   ├── docs/           # Documentation site
-│   │   ├── src/        # Source code for documentation site
+│   ├── playground/     # Demo application to showcase and test components
+│   │   ├── src/        # Source code for playground app
 │   │   └── ...
 └── ...
 ```
 
+## Features
+
+- React 19 compatible components
+- Built with Radix UI primitives
+- Styled using Tailwind CSS 4
+- Type-safe with TypeScript
+- Fast builds with Rspack
+
+## Tech Stack
+
+- [React](https://react.dev/)
+- [shadcn/ui] (https://ui.shadcn.com/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Radix UI](https://www.radix-ui.com/)
+- [Rspack](https://rspack.dev/) & [Rsbuild](https://rsbuild.dev/)
+- [PNPM Workspaces](https://pnpm.io/workspaces)
+
 ## Prerequisites
 
 - Node.js (v16 or higher)
-- PNPM (v8 or higher)
+- PNPM (v8.15.4 or higher)
 
 ## Getting Started
 
-1. Clone the repository:
-
-```bash
-git clone https://github.com/your-username/has-ui-kit-v4.git
-cd has-ui-kit-v4
-```
-
-2. Install dependencies:
+1. Install dependencies:
 
 ```bash
 pnpm install
@@ -40,48 +52,32 @@ pnpm install
 
 ### Start Development Mode
 
+To start development servers for both the UI library and playground app:
+
 ```bash
 pnpm dev
 ```
 
-This will start development servers for all packages in parallel.
+### Build UI Library Only
 
-### Build all packages
+```bash
+pnpm build:ui-kit
+```
+
+### Run Playground Only
+
+```bash
+pnpm playground
+```
+
+### Build All Packages
 
 ```bash
 pnpm build
 ```
 
-### Start all packages
+### Clean Project
 
 ```bash
-pnpm start
+pnpm clean
 ```
-
-## Adding New Components to the UI Kit
-
-1. Create a new directory in `packages/ui-kit/src` for your component
-2. Add your component implementation (see Button.tsx as an example)
-3. Export the component from `packages/ui-kit/src/index.ts`
-4. Rebuild the UI Kit
-
-## UI Kit Components
-
-The UI Kit includes the following components:
-
-- Button: A versatile button component with multiple variants and sizes
-- Input: A customizable input component
-
-Each component follows the Shadcn UI pattern, leveraging Radix UI primitives and Tailwind CSS for styling.
-
-## Publishing
-
-To publish the UI Kit to npm:
-
-1. Update the version in `packages/ui-kit/package.json`
-2. Build the UI Kit
-3. Run `pnpm publish --filter ui-kit`
-
-## License
-
-MIT
