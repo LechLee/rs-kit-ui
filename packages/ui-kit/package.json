@@ -9,6 +9,16 @@
     "dist",
     "package.json"
   ],
+  "keywords": [
+    "react",
+    "react-19",
+    "shadcn",
+    "typescript",
+    "tailwindcss",
+    "radix-ui",
+    "rspack",
+    "rsbuild"
+  ],
   "exports": {
     ".": {
       "import": "./dist/index.mjs",

@@ -70,3 +70,6 @@ pnpm clean
 cd packages/ui-kit
 npm publish --access public
 ```
+
+### Update shadcn component
+npx shadcn@latest add -a -y -o
