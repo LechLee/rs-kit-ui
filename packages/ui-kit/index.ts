@@ -122,6 +122,9 @@ export {
 } from './components/ui/alert-dialog'
 export { Icons } from './components/ui/icons'
 
+// Custom component exports
+export { default as DatePickerBottomSheet } from './components/custom/date-picker-bottom-sheet'
+
 // Utility exports
 export { cn } from './lib/utils'
 

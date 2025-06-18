@@ -1,4 +1,4 @@
-import { Outlet, Link, useLocation } from 'react-router'
+import { Outlet, Link, useLocation } from 'react-router-dom'
 
 import '@rs-kit/ui-kit/dist/index.css'
 import './styles.css'
@@ -9,6 +9,9 @@ function App() {
 
 	// Organize components by category
 	const components = {
+		'Design System': [
+			{ name: 'Colors', path: '/colors' }
+		],
 		Form: [
 			{ name: 'Button', path: '/button' },
 			{ name: 'Checkbox', path: '/checkbox' },

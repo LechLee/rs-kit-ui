@@ -1,6 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import { createBrowserRouter, Navigate, RouterProvider } from 'react-router'
+import { createBrowserRouter, Navigate, RouterProvider } from 'react-router-dom'
 import ButtonSample from './samples/Button.sample'
 import InputSample from './samples/Input.sample'
 import AlertDialogSample from './samples/AlertDialog.sample'
@@ -51,6 +51,7 @@ import TextareaSample from './samples/Textarea.sample'
 import ToggleSample from './samples/Toggle.sample'
 import ToggleGroupSample from './samples/ToggleGroup.sample'
 import TooltipSample from './samples/Tooltip.sample'
+import ColorsSample from './samples/Colors.sample'
 import App from './App'
 
 const routes = [
@@ -60,7 +61,11 @@ const routes = [
 		children: [
 			{
 				path: '/',
-				element: <Navigate to="/button" replace />
+				element: <Navigate to="/colors" replace />
+			},
+			{
+				path: '/colors',
+				element: <ColorsSample />
 			},
 			{
 				path: '/button',

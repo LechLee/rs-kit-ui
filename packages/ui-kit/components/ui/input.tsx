@@ -2,20 +2,35 @@ import * as React from 'react'
 
 import { cn } from '@/lib/utils'
 
-function Input({ className, type, ...props }: React.ComponentProps<'input'>) {
+interface InputProps extends React.ComponentProps<'input'> {
+	error?: boolean
+	errorMessage?: string
+}
+
+const Input = React.forwardRef<HTMLInputElement, InputProps>(({ className, type, error, errorMessage, ...props }, ref) => {
+	const hasValue = props.value && String(props.value).length > 0
+	const isError = error || !!errorMessage || props['aria-invalid'] === 'true' || props['aria-invalid'] === true
+
 	return (
 		<input
 			type={type}
-			data-slot="input"
 			className={cn(
-				'file:text-foreground placeholder:text-muted-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 border-input flex h-9 w-full min-w-0 rounded-md border bg-transparent px-3 py-1 text-base shadow-xs transition-[color,box-shadow] outline-none file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm',
-				'focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px]',
-				'aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive',
+				'w-full bg-white rounded-[10px] text-neutral-800 text-base font-normal border transition-colors',
+				'h-10 pl-4 pr-3 py-1.5',
+				isError
+					? 'border-error-1 focus:border-error-1 focus:ring-1 focus:ring-error-1 focus:outline-none'
+					: hasValue
+					? 'border-gray-500 focus:border-[#e20079] focus:ring-1 focus:ring-[#e20079] focus:outline-none'
+					: 'border-gray-300 focus:border-[#e20079] focus:ring-1 focus:ring-[#e20079] focus:outline-none',
+				'file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground',
+				'placeholder:text-muted-foreground disabled:cursor-not-allowed disabled:opacity-50',
 				className
 			)}
+			ref={ref}
 			{...props}
 		/>
 	)
-}
+})
+Input.displayName = 'Input'
 
 export { Input }
