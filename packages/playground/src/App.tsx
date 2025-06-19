@@ -19,6 +19,7 @@ function App() {
 			{ name: 'Input', path: '/input' },
 			{ name: 'Input OTP', path: '/input-otp' },
 			{ name: 'Label', path: '/label' },
+			{ name: 'Mobile Number Input', path: '/mobile-number-input' },
 			{ name: 'Radio Group', path: '/radio-group' },
 			{ name: 'Select', path: '/select' },
 			{ name: 'Slider', path: '/slider' },

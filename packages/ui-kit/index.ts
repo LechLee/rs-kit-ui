@@ -124,6 +124,7 @@ export { Icons } from './components/ui/icons'
 
 // Custom component exports
 export { default as DatePickerBottomSheet } from './components/custom/date-picker-bottom-sheet'
+export { default as MobileNumberInput } from './components/custom/mobile-number-input'
 
 // Utility exports
 export { cn } from './lib/utils'

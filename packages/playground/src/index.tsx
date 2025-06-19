@@ -52,6 +52,7 @@ import ToggleSample from './samples/Toggle.sample'
 import ToggleGroupSample from './samples/ToggleGroup.sample'
 import TooltipSample from './samples/Tooltip.sample'
 import ColorsSample from './samples/Colors.sample'
+import MobileNumberInputSample from './samples/MobileNumberInput.sample'
 import App from './App'
 
 const routes = [
@@ -180,6 +181,10 @@ const routes = [
 			{
 				path: '/label',
 				element: <LabelSample />
+			},
+			{
+				path: '/mobile-number-input',
+				element: <MobileNumberInputSample />
 			},
 			{
 				path: '/menubar',

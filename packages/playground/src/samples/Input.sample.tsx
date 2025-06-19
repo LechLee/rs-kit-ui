@@ -163,19 +163,16 @@ export default function InputSample() {
 								<div>
 									<label className="block text-sm font-medium text-gray-700 mb-1">Email (with validation)</label>
 									<Input type="email" placeholder="Enter your email" value={email} onChange={handleEmailChange} errorMessage={emailError} />
-									{emailError && <p className="text-error-1 text-sm mt-1">{emailError}</p>}
 								</div>
 
 								<div>
 									<label className="block text-sm font-medium text-gray-700 mb-1">Password (min 8 chars)</label>
 									<Input type="password" placeholder="Enter password" value={password} onChange={handlePasswordChange} errorMessage={passwordError} />
-									{passwordError && <p className="text-error-1 text-sm mt-1">{passwordError}</p>}
 								</div>
 
 								<div>
 									<label className="block text-sm font-medium text-gray-700 mb-1">Phone (optional validation)</label>
 									<Input type="tel" placeholder="+1 (555) 123-4567" value={phone} onChange={handlePhoneChange} errorMessage={phoneError} />
-									{phoneError && <p className="text-error-1 text-sm mt-1">{phoneError}</p>}
 								</div>
 
 								<div>
@@ -187,7 +184,6 @@ export default function InputSample() {
 										onChange={(e) => setConfirmPassword(e.target.value)}
 										errorMessage={confirmPassword !== '' && confirmPassword !== password ? 'Passwords do not match' : ''}
 									/>
-									{confirmPassword !== '' && confirmPassword !== password && <p className="text-error-1 text-sm mt-1">Passwords do not match</p>}
 								</div>
 							</div>
 						</div>
@@ -251,6 +247,24 @@ export default function InputSample() {
 									<label className="block text-sm font-medium text-gray-700 mb-1">File Upload</label>
 									<Input type="file" accept=".jpg,.png,.pdf" />
 								</div>
+
+								<div>
+									<label className="block text-sm font-medium text-gray-700 mb-1">Error with Message Hidden</label>
+									<Input 
+										placeholder="Error border but no message" 
+										errorMessage="This error message is hidden"
+										displayError={false}
+									/>
+								</div>
+
+								<div>
+									<label className="block text-sm font-medium text-gray-700 mb-1">Error with Message Shown</label>
+									<Input 
+										placeholder="Error border with message" 
+										errorMessage="This error message is visible"
+										displayError={true}
+									/>
+								</div>
 							</div>
 						</div>
 
@@ -308,7 +322,6 @@ export default function InputSample() {
 										name="fullName"
 										errorMessage={formData.touched.fullName ? formData.errors.fullName : ''}
 									/>
-									{formData.touched.fullName && formData.errors.fullName && <p className="text-error-1 text-sm mt-1">{formData.errors.fullName}</p>}
 								</div>
 
 								{/* Email */}
@@ -325,7 +338,6 @@ export default function InputSample() {
 										name="email"
 										errorMessage={formData.touched.email ? formData.errors.email : ''}
 									/>
-									{formData.touched.email && formData.errors.email && <p className="text-error-1 text-sm mt-1">{formData.errors.email}</p>}
 								</div>
 
 								{/* Date of Birth */}
@@ -339,7 +351,6 @@ export default function InputSample() {
 										placeholder="Select date of birth"
 										error={formData.touched.dateOfBirth && !!formData.errors.dateOfBirth}
 									/>
-									{formData.touched.dateOfBirth && formData.errors.dateOfBirth && <p className="text-error-1 text-sm mt-1">{formData.errors.dateOfBirth}</p>}
 								</div>
 
 								{/* Phone */}
@@ -354,7 +365,6 @@ export default function InputSample() {
 										name="phone"
 										errorMessage={formData.touched.phone ? formData.errors.phone : ''}
 									/>
-									{formData.touched.phone && formData.errors.phone && <p className="text-error-1 text-sm mt-1">{formData.errors.phone}</p>}
 								</div>
 
 								{/* Password */}
@@ -371,7 +381,6 @@ export default function InputSample() {
 										name="password"
 										errorMessage={formData.touched.password ? formData.errors.password : ''}
 									/>
-									{formData.touched.password && formData.errors.password && <p className="text-error-1 text-sm mt-1">{formData.errors.password}</p>}
 								</div>
 
 								{/* Confirm Password */}
@@ -388,7 +397,6 @@ export default function InputSample() {
 										name="confirmPassword"
 										errorMessage={formData.touched.confirmPassword ? formData.errors.confirmPassword : ''}
 									/>
-									{formData.touched.confirmPassword && formData.errors.confirmPassword && <p className="text-error-1 text-sm mt-1">{formData.errors.confirmPassword}</p>}
 								</div>
 
 								{/* Website */}
@@ -403,7 +411,6 @@ export default function InputSample() {
 										name="website"
 										errorMessage={formData.touched.website ? formData.errors.website : ''}
 									/>
-									{formData.touched.website && formData.errors.website && <p className="text-error-1 text-sm mt-1">{formData.errors.website}</p>}
 								</div>
 							</div>
 
