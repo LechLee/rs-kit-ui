@@ -19,22 +19,17 @@ const useRipple = () => {
 		const x = event.clientX - rect.left
 		const y = event.clientY - rect.top
 
-		console.log('Ripple added at:', { x, y })
-
 		const newRipple: RippleEffect = {
 			key: Date.now(),
 			x,
 			y
 		}
 
-		setRipples((prev) => {
-			console.log('Current ripples:', prev.length, 'Adding new ripple')
-			return [...prev, newRipple]
-		})
+		setRipples((prev) => [...prev, newRipple])
 
 		setTimeout(() => {
 			setRipples((prev) => prev.filter((ripple) => ripple.key !== newRipple.key))
-		}, 600)
+		}, 400)
 	}, [])
 
 	return { ripples, addRipple }
@@ -76,7 +71,6 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(({ className, va
 	const Comp = asChild ? Slot : 'button'
 
 	const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
-		console.log('Button clicked, enableRipple:', enableRipple)
 		if (enableRipple) {
 			addRipple(event)
 		}
@@ -87,16 +81,18 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(({ className, va
 		<Comp className={cn(buttonVariants({ variant, size, className }))} ref={ref} onClick={handleClick} {...props}>
 			{props.children}
 			{enableRipple && (
-				<div className="absolute inset-0 overflow-hidden rounded-md pointer-events-none bg-red-500/10">
+				<div className="absolute inset-0 overflow-hidden rounded-md pointer-events-none">
 					{ripples.map((ripple) => (
 						<span
 							key={ripple.key}
-							className="absolute rounded-full bg-blue-500/75 pointer-events-none w-8 h-8 border-2 border-red-500"
+							className="absolute rounded-full bg-white pointer-events-none animate-ripple"
 							style={{
 								left: ripple.x,
 								top: ripple.y,
 								transform: 'translate(-50%, -50%)',
-								animation: 'ripple 0.6s ease-out forwards'
+								width: '0px',
+								height: '0px'
+								// opacity: 0.15
 							}}
 						/>
 					))}

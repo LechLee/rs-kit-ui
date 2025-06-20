@@ -91,7 +91,7 @@ body {
 	--secondary-2: var(--secondary-color-8);
 	--secondary-3: var(--secondary-color-7);
 
-	--accent: var(--blue-3);
+	--accent: var(--grey-6);
 	--accent-foreground: var(--grey-1);
 
 	--destructive: var(--red);

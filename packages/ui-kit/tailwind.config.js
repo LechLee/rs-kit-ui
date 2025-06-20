@@ -156,11 +156,16 @@ module.exports = {
 				},
 				ripple: {
 					'0%': {
-						transform: 'scale(0)',
-						opacity: '1'
+						width: '0px',
+						height: '0px',
+						opacity: '0'
+					},
+					'25%': {
+						opacity: '0.5'
 					},
 					'100%': {
-						transform: 'scale(4)',
+						width: '200px',
+						height: '200px',
 						opacity: '0'
 					}
 				}
@@ -168,7 +173,7 @@ module.exports = {
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
-				ripple: 'ripple 0.6s ease-out'
+				ripple: 'ripple 0.4s ease-out'
 			}
 		}
 	},

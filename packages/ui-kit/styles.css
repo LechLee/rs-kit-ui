@@ -13,35 +13,35 @@ body {
 :root {
 	/*Color System - Basics */
 	--black: #000000;
-	--white: #FFFFFF;
+	--white: #ffffff;
 
 	/*Color System - Greys */
 	--grey-1: #333333;
 	--grey-2: #666666;
 	--grey-3: #999999;
-	--grey-4: #BDBDBD;
-	--grey-5: #E0E0E0;
-	--grey-6: #F2F2F2;
+	--grey-4: #bdbdbd;
+	--grey-5: #e0e0e0;
+	--grey-6: #f2f2f2;
 
 	/*Color System - Primary (Maroon) */
-	--maroon-1: #9A2B80;
-	--maroon-2: #701C66;
+	--maroon-1: #9a2b80;
+	--maroon-2: #701c66;
 	--maroon-3: #562250;
 
 	/*Color System - Secondary (Blue) */
-	--blue-1: #4F58A5;
-	--blue-2: #8693C3;
-	--blue-3: #DBD8EC;
+	--blue-1: #4f58a5;
+	--blue-2: #8693c3;
+	--blue-3: #dbd8ec;
 
 	/*Color System - Tertiary (Accent Colors) */
-	--yellow: #EEA941;
-	--sky-blue: #85ADDA;
-	--green: #A8D071;
-	--cyan: #A8D071;
-	--red: #C53D05;
+	--yellow: #eea941;
+	--sky-blue: #85adda;
+	--green: #a8d071;
+	--cyan: #a8d071;
+	--red: #c53d05;
 
 	/*Color System - Hyperlinks */
-	--hyperlink: #9A2B80;
+	--hyperlink: #9a2b80;
 
 	/* Shadcn Semantic Variables mapped tocolors */
 	--background: var(--white);
@@ -75,7 +75,7 @@ body {
 	--secondary-2: var(--blue-2);
 	--secondary-3: var(--blue-3);
 
-	--accent: var(--blue-3);
+	--accent: var(--grey-6);
 	--accent-foreground: var(--grey-1);
 
 	--destructive: var(--red);
@@ -90,7 +90,7 @@ body {
 
 	/* Legacy error variables updated to usecolors */
 	--error-1: var(--red);
-	--error-2: #FFF4F8;
+	--error-2: #fff4f8;
 	--error-3: var(--grey-3);
 	--error-4: var(--grey-4);
 	--error-5: var(--grey-5);
@@ -115,7 +115,7 @@ body {
 	--chart-4: var(--cyan);
 	--chart-5: var(--maroon-3);
 	--radius: 0.5rem;
-	
+
 	/* Sidebar colors usingcolor system */
 	--sidebar-background: var(--white);
 	--sidebar-foreground: var(--grey-1);

@@ -54,6 +54,17 @@ export default function ButtonSample() {
 				description="A versatile button component with multiple variants, sizes, and states. Built on top of Radix UI Slot primitive for maximum flexibility."
 				component={
 					<div className="flex flex-col gap-8 w-full max-w-4xl">
+						{/* Ripple Effect Demo */}
+						<div>
+							<h3 className="text-lg font-semibold mb-4">Ripple Effect Demo</h3>
+							<div className="flex flex-wrap items-center gap-3">
+								<Button enableRipple size="lg">Click for Ripple</Button>
+								<Button enableRipple variant="outline" size="lg">Outline Ripple</Button>
+								<Button enableRipple variant="secondary" size="lg">Secondary Ripple</Button>
+								<Button enableRipple={false} size="lg">No Ripple</Button>
+							</div>
+						</div>
+
 						{/* Button Variants */}
 						<div>
 							<h3 className="text-lg font-semibold mb-4">Button Variants</h3>
