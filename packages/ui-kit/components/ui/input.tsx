@@ -2,7 +2,7 @@ import * as React from 'react'
 
 import { cn } from '@/lib/utils'
 
-interface InputProps extends React.ComponentProps<'input'> {
+export interface InputProps extends React.ComponentProps<'input'> {
 	error?: boolean
 	errorMessage?: string
 	displayError?: boolean
@@ -31,9 +31,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(({ className, type,
 				ref={ref}
 				{...props}
 			/>
-			{isError && displayError && errorMessage && (
-				<p className="text-error-1 text-sm mt-1">{errorMessage}</p>
-			)}
+			{isError && displayError && errorMessage && <p className="text-error-1 text-sm mt-1">{errorMessage}</p>}
 		</div>
 	)
 })
