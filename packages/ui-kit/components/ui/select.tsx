@@ -1,5 +1,13 @@
 "use client"
 
+/**
+ * @component Select
+ * @version 1.0.0
+ * @lastModified 2025-06-20
+ * @description A dropdown selection component
+ * @status stable
+ */
+
 import * as React from "react"
 import * as SelectPrimitive from "@radix-ui/react-select"
 import { Check, ChevronDown, ChevronUp } from "lucide-react"

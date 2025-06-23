@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir:*)",
+      "Bash(pnpm build)",
+      "Bash(npx tsx:*)",
+      "Bash(pnpm docs:status:*)",
+      "Bash(pnpm docs:check:*)",
+      "Bash(pnpm docs:extract:*)",
+      "Bash(pnpm dev:*)",
+      "Bash(pnpm --filter playground build)",
+      "Bash(pnpm install:*)",
+      "Bash(grep:*)",
+      "Bash(rg:*)",
+      "Bash(npm run build:*)",
+      "Bash(pnpm test:*)",
+      "Bash(pnpm docs:analyze-samples:*)",
+      "Bash(grep:*)"
+    ],
+    "deny": []
+  }
+}

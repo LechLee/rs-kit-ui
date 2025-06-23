@@ -1,5 +1,13 @@
 "use client"
 
+/**
+ * @component ToggleGroup
+ * @version 1.0.0
+ * @lastModified 2025-06-20
+ * @description A group of toggle buttons
+ * @status stable
+ */
+
 import * as React from "react"
 import * as ToggleGroupPrimitive from "@radix-ui/react-toggle-group"
 import { type VariantProps } from "class-variance-authority"

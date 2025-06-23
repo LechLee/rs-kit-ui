@@ -1,5 +1,13 @@
 "use client"
 
+/**
+ * @component Sonner
+ * @version 1.0.0
+ * @lastModified 2025-06-20
+ * @description Sonner component for the UI library
+ * @status stable
+ */
+
 import { useTheme } from "next-themes"
 import { Toaster as Sonner } from "sonner"
 

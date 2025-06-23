@@ -1,3 +1,11 @@
+/**
+ * @component ScrollArea
+ * @version 1.0.0
+ * @lastModified 2025-06-20
+ * @description A custom scrollable container
+ * @status stable
+ */
+
 import * as React from "react"
 import * as ScrollAreaPrimitive from "@radix-ui/react-scroll-area"
 

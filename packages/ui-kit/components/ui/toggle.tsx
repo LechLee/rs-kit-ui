@@ -1,3 +1,11 @@
+/**
+ * @component Toggle
+ * @version 1.0.0
+ * @lastModified 2025-06-20
+ * @description A toggle button component
+ * @status stable
+ */
+
 import * as React from "react"
 import * as TogglePrimitive from "@radix-ui/react-toggle"
 import { cva, type VariantProps } from "class-variance-authority"

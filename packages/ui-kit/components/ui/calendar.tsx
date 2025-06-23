@@ -1,3 +1,11 @@
+/**
+ * @component Calendar
+ * @version 1.0.0
+ * @lastModified 2025-06-20
+ * @description A date picker and calendar interface component
+ * @status stable
+ */
+
 import * as React from "react"
 import {
   ChevronDownIcon,

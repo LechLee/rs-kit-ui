@@ -1,5 +1,13 @@
 "use client"
 
+/**
+ * @component Menubar
+ * @version 1.0.0
+ * @lastModified 2025-06-20
+ * @description A horizontal menu bar with dropdown menus
+ * @status stable
+ */
+
 import * as React from "react"
 import * as MenubarPrimitive from "@radix-ui/react-menubar"
 import { Check, ChevronRight, Circle } from "lucide-react"

@@ -1,3 +1,11 @@
+/**
+ * @component Checkbox
+ * @version 1.0.0
+ * @lastModified 2025-06-20
+ * @description A binary choice input component
+ * @status stable
+ */
+
 import * as React from "react"
 import * as CheckboxPrimitive from "@radix-ui/react-checkbox"
 import { Check } from "lucide-react"

@@ -1,0 +1,55 @@
+{
+  "name": "@rs-kit/mcp-server",
+  "version": "0.1.0",
+  "description": "MCP server for UI Kit documentation and AI integration",
+  "main": "dist/server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx src/server.ts --watch",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "test": "vitest",
+    "test:watch": "vitest --watch",
+    "lint": "eslint . --ext .ts,.tsx --fix",
+    "typecheck": "tsc --noEmit",
+    "version-check": "tsx src/scripts/version-check.ts",
+    "extract-metadata": "tsx src/scripts/extract-metadata.ts",
+    "add-annotations": "tsx src/scripts/add-version-annotations.ts",
+    "watch-components": "tsx src/scripts/watch-components.ts",
+    "docs:status": "tsx src/scripts/version-check.ts --changed-only",
+    "docs:extract": "tsx src/scripts/extract-metadata.ts --verbose",
+    "docs:annotate": "tsx src/scripts/add-version-annotations.ts --verbose",
+    "docs:generate": "tsx src/scripts/generate-docs.ts",
+    "docs:generate-all": "tsx src/scripts/generate-docs.ts --all",
+    "docs:analyze-samples": "tsx src/scripts/analyze-samples.ts",
+    "docs:extract-examples": "tsx src/scripts/extract-examples.ts",
+    "test:props": "tsx src/scripts/test-prop-extraction.ts",
+    "test:mcp": "tsx src/scripts/test-mcp-server.ts",
+    "test:samples": "tsx src/scripts/test-sample-integration.ts",
+    "mcp:start": "tsx src/server.ts"
+  },
+  "dependencies": {
+    "@types/node": "^20.11.0",
+    "@modelcontextprotocol/sdk": "^0.5.0",
+    "chokidar": "^3.5.3",
+    "crypto": "^1.0.1",
+    "glob": "^10.3.10",
+    "typescript": "^5.3.3",
+    "yaml": "^2.3.4",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/glob": "^8.1.0",
+    "tsx": "^4.7.0",
+    "vitest": "^1.2.0"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist/"
+  ]
+}

@@ -1,3 +1,11 @@
+/**
+ * @component Pagination
+ * @version 1.0.0
+ * @lastModified 2025-06-20
+ * @description A pagination component for navigating through pages
+ * @status stable
+ */
+
 import * as React from "react"
 import { ChevronLeft, ChevronRight, MoreHorizontal } from "lucide-react"
 

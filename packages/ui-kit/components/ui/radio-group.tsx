@@ -1,3 +1,11 @@
+/**
+ * @component RadioGroup
+ * @version 1.0.0
+ * @lastModified 2025-06-20
+ * @description A group of radio button options
+ * @status stable
+ */
+
 import * as React from "react"
 import * as RadioGroupPrimitive from "@radix-ui/react-radio-group"
 import { Circle } from "lucide-react"

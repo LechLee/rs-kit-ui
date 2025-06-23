@@ -1,3 +1,11 @@
+/**
+ * @component Slider
+ * @version 1.0.0
+ * @lastModified 2025-06-20
+ * @description A range input slider component
+ * @status stable
+ */
+
 import * as React from "react"
 import * as SliderPrimitive from "@radix-ui/react-slider"
 

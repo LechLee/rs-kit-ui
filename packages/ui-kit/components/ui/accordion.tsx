@@ -1,3 +1,11 @@
+/**
+ * @component Accordion
+ * @version 1.0.0
+ * @lastModified 2025-06-20
+ * @description A collapsible content container with multiple panels
+ * @status stable
+ */
+
 import * as React from "react"
 import * as AccordionPrimitive from "@radix-ui/react-accordion"
 import { ChevronDown } from "lucide-react"

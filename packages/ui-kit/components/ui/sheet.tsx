@@ -1,5 +1,13 @@
 "use client"
 
+/**
+ * @component Sheet
+ * @version 1.0.0
+ * @lastModified 2025-06-20
+ * @description A slide-out sheet component
+ * @status stable
+ */
+
 import * as React from "react"
 import * as SheetPrimitive from "@radix-ui/react-dialog"
 import { cva, type VariantProps } from "class-variance-authority"

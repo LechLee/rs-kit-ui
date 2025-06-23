@@ -1,3 +1,11 @@
+/**
+ * @component Button
+ * @version 1.1.0
+ * @lastModified 2025-06-20
+ * @description A customizable button component with ripple effect support
+ * @status stable
+ */
+
 import * as React from 'react'
 import { Slot } from '@radix-ui/react-slot'
 import { cva, type VariantProps } from 'class-variance-authority'

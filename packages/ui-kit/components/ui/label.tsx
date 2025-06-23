@@ -1,3 +1,11 @@
+/**
+ * @component Label
+ * @version 1.0.0
+ * @lastModified 2025-06-20
+ * @description A form label component with accessibility features
+ * @status stable
+ */
+
 import * as React from "react"
 import * as LabelPrimitive from "@radix-ui/react-label"
 import { cva, type VariantProps } from "class-variance-authority"

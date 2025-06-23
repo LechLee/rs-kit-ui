@@ -1,3 +1,11 @@
+/**
+ * @component Breadcrumb
+ * @version 1.0.0
+ * @lastModified 2025-06-20
+ * @description Navigation component showing the current page hierarchy
+ * @status stable
+ */
+
 import * as React from "react"
 import { Slot } from "@radix-ui/react-slot"
 import { ChevronRight, MoreHorizontal } from "lucide-react"

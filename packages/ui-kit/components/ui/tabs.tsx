@@ -1,3 +1,11 @@
+/**
+ * @component Tabs
+ * @version 1.0.0
+ * @lastModified 2025-06-20
+ * @description A tabbed interface component
+ * @status stable
+ */
+
 import * as React from "react"
 import * as TabsPrimitive from "@radix-ui/react-tabs"
 

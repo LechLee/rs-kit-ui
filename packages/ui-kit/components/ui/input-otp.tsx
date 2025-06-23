@@ -1,3 +1,11 @@
+/**
+ * @component InputOtp
+ * @version 1.0.0
+ * @lastModified 2025-06-20
+ * @description InputOtp component for the UI library
+ * @status stable
+ */
+
 import * as React from "react"
 import { OTPInput, OTPInputContext } from "input-otp"
 import { Dot } from "lucide-react"

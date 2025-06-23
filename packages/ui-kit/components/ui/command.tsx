@@ -1,3 +1,11 @@
+/**
+ * @component Command
+ * @version 1.0.0
+ * @lastModified 2025-06-20
+ * @description A command palette and search interface component
+ * @status stable
+ */
+
 import * as React from "react"
 import { type DialogProps } from "@radix-ui/react-dialog"
 import { Command as CommandPrimitive } from "cmdk"

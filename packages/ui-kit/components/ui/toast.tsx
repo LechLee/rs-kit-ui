@@ -1,5 +1,13 @@
 'use client'
 
+/**
+ * @component Toast
+ * @version 1.0.0
+ * @lastModified 2025-06-20
+ * @description A notification toast component
+ * @status stable
+ */
+
 import * as React from 'react'
 import * as ToastPrimitives from '@radix-ui/react-toast'
 import { cva, type VariantProps } from 'class-variance-authority'

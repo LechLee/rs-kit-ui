@@ -1,3 +1,11 @@
+/**
+ * @component Table
+ * @version 1.0.0
+ * @lastModified 2025-06-20
+ * @description A data table component with sorting and styling
+ * @status stable
+ */
+
 import * as React from "react"
 
 import { cn } from "@/lib/utils"

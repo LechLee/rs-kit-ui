@@ -1,6 +1,14 @@
 'use client'
 
 // Inspired by react-hot-toast library
+/**
+ * @component UseToast
+ * @version 1.0.0
+ * @lastModified 2025-06-20
+ * @description UseToast component for the UI library
+ * @status stable
+ */
+
 import * as React from 'react'
 
 import type { ToastActionElement, ToastProps } from '@/components/ui/toast'

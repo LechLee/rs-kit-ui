@@ -1,3 +1,11 @@
+/**
+ * @component Carousel
+ * @version 1.0.0
+ * @lastModified 2025-06-20
+ * @description A slideshow component for displaying multiple items
+ * @status stable
+ */
+
 import * as React from "react"
 import useEmblaCarousel, {
   type UseEmblaCarouselType,

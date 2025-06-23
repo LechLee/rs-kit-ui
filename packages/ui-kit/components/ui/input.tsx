@@ -1,3 +1,11 @@
+/**
+ * @component Input
+ * @version 1.0.0
+ * @lastModified 2025-06-20
+ * @description A text input component with various styling options
+ * @status stable
+ */
+
 import * as React from 'react'
 
 import { cn } from '@/lib/utils'

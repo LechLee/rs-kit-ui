@@ -1,3 +1,11 @@
+/**
+ * @component NavigationMenu
+ * @version 1.0.0
+ * @lastModified 2025-06-20
+ * @description A navigation menu with nested items
+ * @status stable
+ */
+
 import * as React from "react"
 import * as NavigationMenuPrimitive from "@radix-ui/react-navigation-menu"
 import { cva } from "class-variance-authority"

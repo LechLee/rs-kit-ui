@@ -1,0 +1,1129 @@
+TooltipContent:
+  currentVersion: 1.0.0
+  lastModified: 2025-06-20
+  filePath: /Users/chrislee/Documents/Projects/has/has-ui-kit-v4/packages/ui-kit/components/ui/tooltip.tsx
+  documentationVersion: ""
+  lastDocumentationUpdate: ""
+  hash: ee5569a0d4f69e33e7e9c5044b4a8a60a1e7fe04a6affd82a3d3b176cf51c901
+  size: 1349
+  exports:
+    - Tooltip
+    - TooltipTrigger
+    - TooltipContent
+    - TooltipProvider
+  status: stable
+  history:
+    - version: 1.0.0
+      date: 2025-06-20T09:01:45.632Z
+      changes:
+        - major
+      breaking: true
+      migrationRequired: true
+      notes: Initial version
+Toggle:
+  currentVersion: 1.0.0
+  lastModified: 2025-06-20
+  filePath: /Users/chrislee/Documents/Projects/has/has-ui-kit-v4/packages/ui-kit/components/ui/toggle.tsx
+  documentationVersion: ""
+  lastDocumentationUpdate: ""
+  hash: fb04d46166b03e96a9bb9dd1cbfb6cd1c99946e9d7a614a90b4b6eea659e9aa6
+  size: 1663
+  exports:
+    - Toggle
+    - toggleVariants
+  status: stable
+  history:
+    - version: 1.0.0
+      date: 2025-06-20T09:01:45.633Z
+      changes:
+        - major
+      breaking: true
+      migrationRequired: true
+      notes: Initial version
+ToggleGroup:
+  currentVersion: 1.0.0
+  lastModified: 2025-06-20
+  filePath: /Users/chrislee/Documents/Projects/has/has-ui-kit-v4/packages/ui-kit/components/ui/toggle-group.tsx
+  documentationVersion: ""
+  lastDocumentationUpdate: ""
+  hash: 599962a2873d13078cc8390ef7fc2a1d25790cbdb81e6ac3e255fef442609df3
+  size: 1894
+  exports:
+    - ToggleGroup
+    - ToggleGroupItem
+  status: stable
+  history:
+    - version: 1.0.0
+      date: 2025-06-20T09:01:45.633Z
+      changes:
+        - major
+      breaking: true
+      migrationRequired: true
+      notes: Initial version
+ToastViewport:
+  currentVersion: 1.0.0
+  lastModified: 2025-06-20
+  filePath: /Users/chrislee/Documents/Projects/has/has-ui-kit-v4/packages/ui-kit/components/ui/toast.tsx
+  documentationVersion: ""
+  lastDocumentationUpdate: ""
+  hash: 3a480006afb2fe042256d532a3ef6880064480e1837a7b4fc9e883826b4f90dc
+  size: 4775
+  exports:
+    - type ToastProps
+    - type ToastActionElement
+    - ToastProvider
+    - ToastViewport
+    - Toast
+    - ToastTitle
+    - ToastDescription
+    - ToastClose
+    - ToastAction
+  status: stable
+  history:
+    - version: 1.0.0
+      date: 2025-06-20T09:01:45.634Z
+      changes:
+        - major
+      breaking: true
+      migrationRequired: true
+      notes: Initial version
+Textarea:
+  currentVersion: 1.0.0
+  lastModified: 2025-06-20
+  filePath: /Users/chrislee/Documents/Projects/has/has-ui-kit-v4/packages/ui-kit/components/ui/textarea.tsx
+  documentationVersion: ""
+  lastDocumentationUpdate: ""
+  hash: 57a57e055bee936350b3e8fbb29704d1ab855b5e6c8035fa12c6a19b736e1a88
+  size: 835
+  exports:
+    - Textarea
+  status: stable
+  history:
+    - version: 1.0.0
+      date: 2025-06-20T09:01:45.634Z
+      changes:
+        - major
+      breaking: true
+      migrationRequired: true
+      notes: Initial version
+TabsList:
+  currentVersion: 1.0.0
+  lastModified: 2025-06-20
+  filePath: /Users/chrislee/Documents/Projects/has/has-ui-kit-v4/packages/ui-kit/components/ui/tabs.tsx
+  documentationVersion: ""
+  lastDocumentationUpdate: ""
+  hash: d17985deda64b0267cb0174870bdcd77e6780ef4d3624afed153bf247e2a20bc
+  size: 2020
+  exports:
+    - Tabs
+    - TabsList
+    - TabsTrigger
+    - TabsContent
+  status: stable
+  history:
+    - version: 1.0.0
+      date: 2025-06-20T09:01:45.635Z
+      changes:
+        - major
+      breaking: true
+      migrationRequired: true
+      notes: Initial version
+Table:
+  currentVersion: 1.0.0
+  lastModified: 2025-06-20
+  filePath: /Users/chrislee/Documents/Projects/has/has-ui-kit-v4/packages/ui-kit/components/ui/table.tsx
+  documentationVersion: ""
+  lastDocumentationUpdate: ""
+  hash: 1abff91e3e4ea6043fd64a052ef1d9b0ab1e4555a3c03a87056e8c7596c4838f
+  size: 2922
+  exports:
+    - Table
+    - TableHeader
+    - TableBody
+    - TableFooter
+    - TableHead
+    - TableRow
+    - TableCell
+    - TableCaption
+  status: stable
+  history:
+    - version: 1.0.0
+      date: 2025-06-20T09:01:45.635Z
+      changes:
+        - major
+      breaking: true
+      migrationRequired: true
+      notes: Initial version
+Switch:
+  currentVersion: 1.0.0
+  lastModified: 2025-06-20
+  filePath: /Users/chrislee/Documents/Projects/has/has-ui-kit-v4/packages/ui-kit/components/ui/switch.tsx
+  documentationVersion: ""
+  lastDocumentationUpdate: ""
+  hash: 67391548b2e2b8f41f23684666b58d5c1828a69263765102fe73b78b6b488b69
+  size: 1275
+  exports:
+    - Switch
+  status: stable
+  history:
+    - version: 1.0.0
+      date: 2025-06-20T09:01:45.635Z
+      changes:
+        - major
+      breaking: true
+      migrationRequired: true
+      notes: Initial version
+Toaster:
+  currentVersion: 1.0.0
+  lastModified: 2025-06-20
+  filePath: /Users/chrislee/Documents/Projects/has/has-ui-kit-v4/packages/ui-kit/components/ui/sonner.tsx
+  documentationVersion: ""
+  lastDocumentationUpdate: ""
+  hash: 26c6cb1c4d6c4d55f2c41c29a1d5f9ec9e934eba8ea07c3dceafe4f122ace1b7
+  size: 1040
+  exports:
+    - Toaster
+  status: stable
+  history:
+    - version: 1.0.0
+      date: 2025-06-20T09:01:45.636Z
+      changes:
+        - major
+      breaking: true
+      migrationRequired: true
+      notes: Initial version
+Slider:
+  currentVersion: 1.0.0
+  lastModified: 2025-06-20
+  filePath: /Users/chrislee/Documents/Projects/has/has-ui-kit-v4/packages/ui-kit/components/ui/slider.tsx
+  documentationVersion: ""
+  lastDocumentationUpdate: ""
+  hash: da6ab7c515ac692fdbcdaac5d85bf9eb89902edeab0e1991d9811d147c31b82e
+  size: 1218
+  exports:
+    - Slider
+  status: stable
+  history:
+    - version: 1.0.0
+      date: 2025-06-20T09:01:45.636Z
+      changes:
+        - major
+      breaking: true
+      migrationRequired: true
+      notes: Initial version
+Skeleton:
+  currentVersion: 1.0.0
+  lastModified: 2025-06-20
+  filePath: /Users/chrislee/Documents/Projects/has/has-ui-kit-v4/packages/ui-kit/components/ui/skeleton.tsx
+  documentationVersion: ""
+  lastDocumentationUpdate: ""
+  hash: 55ea1cca491dc31c356959e70157cb3891d8526637186784b356eb6e946dc509
+  size: 416
+  exports:
+    - Skeleton
+  status: stable
+  history:
+    - version: 1.0.0
+      date: 2025-06-20T09:01:45.637Z
+      changes:
+        - major
+      breaking: true
+      migrationRequired: true
+      notes: Initial version
+SidebarProvider:
+  currentVersion: 1.0.0
+  lastModified: 2025-06-20
+  filePath: /Users/chrislee/Documents/Projects/has/has-ui-kit-v4/packages/ui-kit/components/ui/sidebar.tsx
+  documentationVersion: ""
+  lastDocumentationUpdate: ""
+  hash: 12b0d39a1317be97cc9513f1510a02c992bc1b0cb458ffa217cee6ec7cb73ac6
+  size: 21288
+  exports:
+    - Sidebar
+    - SidebarContent
+    - SidebarFooter
+    - SidebarGroup
+    - SidebarGroupAction
+    - SidebarGroupContent
+    - SidebarGroupLabel
+    - SidebarHeader
+    - SidebarInput
+    - SidebarInset
+    - SidebarMenu
+    - SidebarMenuAction
+    - SidebarMenuBadge
+    - SidebarMenuButton
+    - SidebarMenuItem
+    - SidebarMenuSkeleton
+    - SidebarMenuSub
+    - SidebarMenuSubButton
+    - SidebarMenuSubItem
+    - SidebarProvider
+    - SidebarRail
+    - SidebarSeparator
+    - SidebarTrigger
+    - useSidebar
+  status: stable
+  history:
+    - version: 1.0.0
+      date: 2025-06-20T09:01:45.637Z
+      changes:
+        - major
+      breaking: true
+      migrationRequired: true
+      notes: Initial version
+SheetOverlay:
+  currentVersion: 1.0.0
+  lastModified: 2025-06-20
+  filePath: /Users/chrislee/Documents/Projects/has/has-ui-kit-v4/packages/ui-kit/components/ui/sheet.tsx
+  documentationVersion: ""
+  lastDocumentationUpdate: ""
+  hash: 1945827f6ae43019b555c7bde7b5f5e97b39d82d0fe87ba6d851a529b31ac7ba
+  size: 4418
+  exports:
+    - Sheet
+    - SheetPortal
+    - SheetOverlay
+    - SheetTrigger
+    - SheetClose
+    - SheetContent
+    - SheetHeader
+    - SheetFooter
+    - SheetTitle
+    - SheetDescription
+  status: stable
+  history:
+    - version: 1.0.0
+      date: 2025-06-20T09:01:45.638Z
+      changes:
+        - major
+      breaking: true
+      migrationRequired: true
+      notes: Initial version
+Separator:
+  currentVersion: 1.0.0
+  lastModified: 2025-06-20
+  filePath: /Users/chrislee/Documents/Projects/has/has-ui-kit-v4/packages/ui-kit/components/ui/separator.tsx
+  documentationVersion: ""
+  lastDocumentationUpdate: ""
+  hash: 78f57c9e67e9f8eb300c26d0db2e597715f8ccbecabe2990b229184faa30da16
+  size: 896
+  exports:
+    - Separator
+  status: stable
+  history:
+    - version: 1.0.0
+      date: 2025-06-20T09:01:45.638Z
+      changes:
+        - major
+      breaking: true
+      migrationRequired: true
+      notes: Initial version
+SelectTrigger:
+  currentVersion: 1.0.0
+  lastModified: 2025-06-20
+  filePath: /Users/chrislee/Documents/Projects/has/has-ui-kit-v4/packages/ui-kit/components/ui/select.tsx
+  documentationVersion: ""
+  lastDocumentationUpdate: ""
+  hash: 9307219688f61b771d82d9ebd338338002e59a1503403deb8477e026856c53e9
+  size: 5883
+  exports:
+    - Select
+    - SelectGroup
+    - SelectValue
+    - SelectTrigger
+    - SelectContent
+    - SelectLabel
+    - SelectItem
+    - SelectSeparator
+    - SelectScrollUpButton
+    - SelectScrollDownButton
+  status: stable
+  history:
+    - version: 1.0.0
+      date: 2025-06-20T09:01:45.638Z
+      changes:
+        - major
+      breaking: true
+      migrationRequired: true
+      notes: Initial version
+ScrollArea:
+  currentVersion: 1.0.0
+  lastModified: 2025-06-20
+  filePath: /Users/chrislee/Documents/Projects/has/has-ui-kit-v4/packages/ui-kit/components/ui/scroll-area.tsx
+  documentationVersion: ""
+  lastDocumentationUpdate: ""
+  hash: ca11f18efa3cf76ae336644caa3097afb6def0e848283f810361e12cdc3ad177
+  size: 1786
+  exports:
+    - ScrollArea
+    - ScrollBar
+  status: stable
+  history:
+    - version: 1.0.0
+      date: 2025-06-20T09:01:45.639Z
+      changes:
+        - major
+      breaking: true
+      migrationRequired: true
+      notes: Initial version
+ResizablePanelGroup:
+  currentVersion: 1.0.0
+  lastModified: 2025-06-20
+  filePath: /Users/chrislee/Documents/Projects/has/has-ui-kit-v4/packages/ui-kit/components/ui/resizable.tsx
+  documentationVersion: ""
+  lastDocumentationUpdate: ""
+  hash: b3426170a85ff75bf1fda40674f6846eaff7bc27be1630dbe18191d373879358
+  size: 1881
+  exports:
+    - ResizablePanelGroup
+    - ResizablePanel
+    - ResizableHandle
+  status: stable
+  history:
+    - version: 1.0.0
+      date: 2025-06-20T09:01:45.639Z
+      changes:
+        - major
+      breaking: true
+      migrationRequired: true
+      notes: Initial version
+RadioGroup:
+  currentVersion: 1.0.0
+  lastModified: 2025-06-20
+  filePath: /Users/chrislee/Documents/Projects/has/has-ui-kit-v4/packages/ui-kit/components/ui/radio-group.tsx
+  documentationVersion: ""
+  lastDocumentationUpdate: ""
+  hash: bc1c50e0dbe6f16a3e9d4d963130dc9fd2ff6f2339c2d3dbac127de45f5a33e3
+  size: 1613
+  exports:
+    - RadioGroup
+    - RadioGroupItem
+  status: stable
+  history:
+    - version: 1.0.0
+      date: 2025-06-20T09:01:45.639Z
+      changes:
+        - major
+      breaking: true
+      migrationRequired: true
+      notes: Initial version
+Progress:
+  currentVersion: 1.0.0
+  lastModified: 2025-06-20
+  filePath: /Users/chrislee/Documents/Projects/has/has-ui-kit-v4/packages/ui-kit/components/ui/progress.tsx
+  documentationVersion: ""
+  lastDocumentationUpdate: ""
+  hash: 8cc4199a8d7695dc6477c939484b2d8a7a3512719ab466d46aaca7b2145e828c
+  size: 934
+  exports:
+    - Progress
+  status: stable
+  history:
+    - version: 1.0.0
+      date: 2025-06-20T09:01:45.640Z
+      changes:
+        - major
+      breaking: true
+      migrationRequired: true
+      notes: Initial version
+PopoverContent:
+  currentVersion: 1.0.0
+  lastModified: 2025-06-20
+  filePath: /Users/chrislee/Documents/Projects/has/has-ui-kit-v4/packages/ui-kit/components/ui/popover.tsx
+  documentationVersion: ""
+  lastDocumentationUpdate: ""
+  hash: 04cd3242d6750e88859edfa9a46df58f6126c27adfcb11afb0454d14fd40f49a
+  size: 1430
+  exports:
+    - Popover
+    - PopoverTrigger
+    - PopoverContent
+  status: stable
+  history:
+    - version: 1.0.0
+      date: 2025-06-20T09:01:45.640Z
+      changes:
+        - major
+      breaking: true
+      migrationRequired: true
+      notes: Initial version
+PaginationContent:
+  currentVersion: 1.0.0
+  lastModified: 2025-06-20
+  filePath: /Users/chrislee/Documents/Projects/has/has-ui-kit-v4/packages/ui-kit/components/ui/pagination.tsx
+  documentationVersion: ""
+  lastDocumentationUpdate: ""
+  hash: 036a3a6abda698200e4c70263766b4229c9396ffe78fdf6821e7f6069d42d945
+  size: 2917
+  exports:
+    - Pagination
+    - PaginationContent
+    - PaginationEllipsis
+    - PaginationItem
+    - PaginationLink
+    - PaginationNext
+    - PaginationPrevious
+  status: stable
+  history:
+    - version: 1.0.0
+      date: 2025-06-20T09:01:45.640Z
+      changes:
+        - major
+      breaking: true
+      migrationRequired: true
+      notes: Initial version
+NavigationMenu:
+  currentVersion: 1.0.0
+  lastModified: 2025-06-20
+  filePath: /Users/chrislee/Documents/Projects/has/has-ui-kit-v4/packages/ui-kit/components/ui/navigation-menu.tsx
+  documentationVersion: ""
+  lastDocumentationUpdate: ""
+  hash: 6f64dda0b2b244da44277c9fadd5c84dbd49c43891b59fb5bcc103bdd9af54b7
+  size: 5282
+  exports:
+    - navigationMenuTriggerStyle
+    - NavigationMenu
+    - NavigationMenuList
+    - NavigationMenuItem
+    - NavigationMenuContent
+    - NavigationMenuTrigger
+    - NavigationMenuLink
+    - NavigationMenuIndicator
+    - NavigationMenuViewport
+  status: stable
+  history:
+    - version: 1.0.0
+      date: 2025-06-20T09:01:45.641Z
+      changes:
+        - major
+      breaking: true
+      migrationRequired: true
+      notes: Initial version
+Menubar:
+  currentVersion: 1.0.0
+  lastModified: 2025-06-20
+  filePath: /Users/chrislee/Documents/Projects/has/has-ui-kit-v4/packages/ui-kit/components/ui/menubar.tsx
+  documentationVersion: ""
+  lastDocumentationUpdate: ""
+  hash: fb03418c57c933e67a7bd37d70a4c63a80dccf141224d973cafbce2954b1c6a1
+  size: 8758
+  exports:
+    - Menubar
+    - MenubarMenu
+    - MenubarTrigger
+    - MenubarContent
+    - MenubarItem
+    - MenubarSeparator
+    - MenubarLabel
+    - MenubarCheckboxItem
+    - MenubarRadioGroup
+    - MenubarRadioItem
+    - MenubarPortal
+    - MenubarSubContent
+    - MenubarSubTrigger
+    - MenubarGroup
+    - MenubarSub
+    - MenubarShortcut
+  status: stable
+  history:
+    - version: 1.0.0
+      date: 2025-06-20T09:01:45.641Z
+      changes:
+        - major
+      breaking: true
+      migrationRequired: true
+      notes: Initial version
+Label:
+  currentVersion: 1.0.0
+  lastModified: 2025-06-20
+  filePath: /Users/chrislee/Documents/Projects/has/has-ui-kit-v4/packages/ui-kit/components/ui/label.tsx
+  documentationVersion: ""
+  lastDocumentationUpdate: ""
+  hash: ef2f4e48aa311250a1365f29b534a405d424a21d49c950ec7301eb86e28ecad2
+  size: 870
+  exports:
+    - Label
+  status: stable
+  history:
+    - version: 1.0.0
+      date: 2025-06-20T09:01:45.641Z
+      changes:
+        - major
+      breaking: true
+      migrationRequired: true
+      notes: Initial version
+Input:
+  currentVersion: 1.0.0
+  lastModified: 2025-06-20
+  filePath: /Users/chrislee/Documents/Projects/has/has-ui-kit-v4/packages/ui-kit/components/ui/input.tsx
+  documentationVersion: ""
+  lastDocumentationUpdate: ""
+  hash: 0173b4f97f35e676cd4eefb83d98996aafb4fa5cd4ab586709a869fd93471562
+  size: 1639
+  exports:
+    - InputProps
+    - Input
+  status: stable
+  history:
+    - version: 1.0.0
+      date: 2025-06-20T09:01:45.641Z
+      changes:
+        - major
+      breaking: true
+      migrationRequired: true
+      notes: Initial version
+InputOTP:
+  currentVersion: 1.0.0
+  lastModified: 2025-06-20
+  filePath: /Users/chrislee/Documents/Projects/has/has-ui-kit-v4/packages/ui-kit/components/ui/input-otp.tsx
+  documentationVersion: ""
+  lastDocumentationUpdate: ""
+  hash: ba3ead24ed7ff5ca7c70e3fe7ed4e616e64984fcbb1ffb87ac75e65ce29692e5
+  size: 2304
+  exports:
+    - InputOTP
+    - InputOTPGroup
+    - InputOTPSlot
+    - InputOTPSeparator
+  status: stable
+  history:
+    - version: 1.0.0
+      date: 2025-06-20T09:01:45.642Z
+      changes:
+        - major
+      breaking: true
+      migrationRequired: true
+      notes: Initial version
+HoverCardContent:
+  currentVersion: 1.0.0
+  lastModified: 2025-06-20
+  filePath: /Users/chrislee/Documents/Projects/has/has-ui-kit-v4/packages/ui-kit/components/ui/hover-card.tsx
+  documentationVersion: ""
+  lastDocumentationUpdate: ""
+  hash: fcf2f45485be56940dfeaf94784c1757b7ace3c73d48f9a91c9d0e07c0cc6a06
+  size: 1402
+  exports:
+    - HoverCard
+    - HoverCardTrigger
+    - HoverCardContent
+  status: stable
+  history:
+    - version: 1.0.0
+      date: 2025-06-20T09:01:45.643Z
+      changes:
+        - major
+      breaking: true
+      migrationRequired: true
+      notes: Initial version
+FormItem:
+  currentVersion: 1.0.0
+  lastModified: 2025-06-20
+  filePath: /Users/chrislee/Documents/Projects/has/has-ui-kit-v4/packages/ui-kit/components/ui/form.tsx
+  documentationVersion: ""
+  lastDocumentationUpdate: ""
+  hash: 0385a22e2b1ddbef238d9b9806fb84c75bdd39afac0ed8c33727321cf6e39af2
+  size: 4281
+  exports:
+    - useFormField
+    - Form
+    - FormItem
+    - FormLabel
+    - FormControl
+    - FormDescription
+    - FormMessage
+    - FormField
+  status: stable
+  history:
+    - version: 1.0.0
+      date: 2025-06-20T09:01:45.643Z
+      changes:
+        - major
+      breaking: true
+      migrationRequired: true
+      notes: Initial version
+DropdownMenuSubTrigger:
+  currentVersion: 1.0.0
+  lastModified: 2025-06-20
+  filePath: /Users/chrislee/Documents/Projects/has/has-ui-kit-v4/packages/ui-kit/components/ui/dropdown-menu.tsx
+  documentationVersion: ""
+  lastDocumentationUpdate: ""
+  hash: 8b23f36b7065d42f9a5a93ddfc15f27e1851c25c092a0e98cdb68fde9d66b14d
+  size: 7768
+  exports:
+    - DropdownMenu
+    - DropdownMenuTrigger
+    - DropdownMenuContent
+    - DropdownMenuItem
+    - DropdownMenuCheckboxItem
+    - DropdownMenuRadioItem
+    - DropdownMenuLabel
+    - DropdownMenuSeparator
+    - DropdownMenuShortcut
+    - DropdownMenuGroup
+    - DropdownMenuPortal
+    - DropdownMenuSub
+    - DropdownMenuSubContent
+    - DropdownMenuSubTrigger
+    - DropdownMenuRadioGroup
+  status: stable
+  history:
+    - version: 1.0.0
+      date: 2025-06-20T09:01:45.643Z
+      changes:
+        - major
+      breaking: true
+      migrationRequired: true
+      notes: Initial version
+DrawerOverlay:
+  currentVersion: 1.0.0
+  lastModified: 2025-06-20
+  filePath: /Users/chrislee/Documents/Projects/has/has-ui-kit-v4/packages/ui-kit/components/ui/drawer.tsx
+  documentationVersion: ""
+  lastDocumentationUpdate: ""
+  hash: 7154675a148946c5ea317d91bb2ddb3616e6b5117fb207b0138198781710d572
+  size: 3159
+  exports:
+    - Drawer
+    - DrawerPortal
+    - DrawerOverlay
+    - DrawerTrigger
+    - DrawerClose
+    - DrawerContent
+    - DrawerHeader
+    - DrawerFooter
+    - DrawerTitle
+    - DrawerDescription
+  status: stable
+  history:
+    - version: 1.0.0
+      date: 2025-06-20T09:01:45.644Z
+      changes:
+        - major
+      breaking: true
+      migrationRequired: true
+      notes: Initial version
+DialogOverlay:
+  currentVersion: 1.0.0
+  lastModified: 2025-06-20
+  filePath: /Users/chrislee/Documents/Projects/has/has-ui-kit-v4/packages/ui-kit/components/ui/dialog.tsx
+  documentationVersion: ""
+  lastDocumentationUpdate: ""
+  hash: d212f2e1c1ba5596c3eec7d401756831b6d7377ecc8c558bd7b50895480c7973
+  size: 4008
+  exports:
+    - Dialog
+    - DialogPortal
+    - DialogOverlay
+    - DialogClose
+    - DialogTrigger
+    - DialogContent
+    - DialogHeader
+    - DialogFooter
+    - DialogTitle
+    - DialogDescription
+  status: stable
+  history:
+    - version: 1.0.0
+      date: 2025-06-20T09:01:45.644Z
+      changes:
+        - major
+      breaking: true
+      migrationRequired: true
+      notes: Initial version
+ContextMenuSubTrigger:
+  currentVersion: 1.0.0
+  lastModified: 2025-06-20
+  filePath: /Users/chrislee/Documents/Projects/has/has-ui-kit-v4/packages/ui-kit/components/ui/context-menu.tsx
+  documentationVersion: ""
+  lastDocumentationUpdate: ""
+  hash: 22fd612d915dd034a0c93471e3acf24f7778e2659d38d3f3d18095c20efd8441
+  size: 7580
+  exports:
+    - ContextMenu
+    - ContextMenuTrigger
+    - ContextMenuContent
+    - ContextMenuItem
+    - ContextMenuCheckboxItem
+    - ContextMenuRadioItem
+    - ContextMenuLabel
+    - ContextMenuSeparator
+    - ContextMenuShortcut
+    - ContextMenuGroup
+    - ContextMenuPortal
+    - ContextMenuSub
+    - ContextMenuSubContent
+    - ContextMenuSubTrigger
+    - ContextMenuRadioGroup
+  status: stable
+  history:
+    - version: 1.0.0
+      date: 2025-06-20T09:01:45.644Z
+      changes:
+        - major
+      breaking: true
+      migrationRequired: true
+      notes: Initial version
+Command:
+  currentVersion: 1.0.0
+  lastModified: 2025-06-20
+  filePath: /Users/chrislee/Documents/Projects/has/has-ui-kit-v4/packages/ui-kit/components/ui/command.tsx
+  documentationVersion: ""
+  lastDocumentationUpdate: ""
+  hash: 6fc1aa9f0977100f7d19acff9fb228577ba8e3b25d09a909aff42c73e2109e38
+  size: 5045
+  exports:
+    - Command
+    - CommandDialog
+    - CommandInput
+    - CommandList
+    - CommandEmpty
+    - CommandGroup
+    - CommandItem
+    - CommandShortcut
+    - CommandSeparator
+  status: stable
+  history:
+    - version: 1.0.0
+      date: 2025-06-20T09:01:45.644Z
+      changes:
+        - major
+      breaking: true
+      migrationRequired: true
+      notes: Initial version
+Checkbox:
+  currentVersion: 1.0.0
+  lastModified: 2025-06-20
+  filePath: /Users/chrislee/Documents/Projects/has/has-ui-kit-v4/packages/ui-kit/components/ui/checkbox.tsx
+  documentationVersion: ""
+  lastDocumentationUpdate: ""
+  hash: e497b61c4f855b2ee95efe443d8ea98ea593c1d16e7ed659fa3a26b4e55ee185
+  size: 1200
+  exports:
+    - Checkbox
+  status: stable
+  history:
+    - version: 1.0.0
+      date: 2025-06-20T09:01:45.645Z
+      changes:
+        - major
+      breaking: true
+      migrationRequired: true
+      notes: Initial version
+ChartContainer:
+  currentVersion: 1.0.0
+  lastModified: 2025-06-20
+  filePath: /Users/chrislee/Documents/Projects/has/has-ui-kit-v4/packages/ui-kit/components/ui/chart.tsx
+  documentationVersion: ""
+  lastDocumentationUpdate: ""
+  hash: de30af63a1b731907bbeed0068153ccd3dbf3ac47a2f2626ea6a4090a6a74623
+  size: 10645
+  exports:
+    - ChartConfig
+    - ChartContainer
+    - ChartTooltip
+    - ChartTooltipContent
+    - ChartLegend
+    - ChartLegendContent
+    - ChartStyle
+  status: stable
+  history:
+    - version: 1.0.0
+      date: 2025-06-20T09:01:45.645Z
+      changes:
+        - major
+      breaking: true
+      migrationRequired: true
+      notes: Initial version
+Carousel:
+  currentVersion: 1.0.0
+  lastModified: 2025-06-20
+  filePath: /Users/chrislee/Documents/Projects/has/has-ui-kit-v4/packages/ui-kit/components/ui/carousel.tsx
+  documentationVersion: ""
+  lastDocumentationUpdate: ""
+  hash: 95e4c5e548bd9956f91287ee928427b8f5db47a272d6ddd0046022c04e62e0d0
+  size: 6374
+  exports:
+    - type CarouselApi
+    - Carousel
+    - CarouselContent
+    - CarouselItem
+    - CarouselPrevious
+    - CarouselNext
+  status: stable
+  history:
+    - version: 1.0.0
+      date: 2025-06-20T09:01:45.645Z
+      changes:
+        - major
+      breaking: true
+      migrationRequired: true
+      notes: Initial version
+Card:
+  currentVersion: 1.0.0
+  lastModified: 2025-06-20
+  filePath: /Users/chrislee/Documents/Projects/has/has-ui-kit-v4/packages/ui-kit/components/ui/card.tsx
+  documentationVersion: ""
+  lastDocumentationUpdate: ""
+  hash: 2d05bdedba225b6de3bf9c4593b4ebf0a148f068ead78ecc00315286968bdda3
+  size: 2034
+  exports:
+    - Card
+    - CardHeader
+    - CardFooter
+    - CardTitle
+    - CardDescription
+    - CardContent
+  status: stable
+  history:
+    - version: 1.0.0
+      date: 2025-06-20T09:01:45.646Z
+      changes:
+        - major
+      breaking: true
+      migrationRequired: true
+      notes: Initial version
+Calendar:
+  currentVersion: 1.0.0
+  lastModified: 2025-06-20
+  filePath: /Users/chrislee/Documents/Projects/has/has-ui-kit-v4/packages/ui-kit/components/ui/calendar.tsx
+  documentationVersion: ""
+  lastDocumentationUpdate: ""
+  hash: 8a9b89e6c92be9385419465419206b6ea8f7e27954014939954e9b4c3df8ff5d
+  size: 7673
+  exports:
+    - Calendar
+    - CalendarDayButton
+  status: stable
+  history:
+    - version: 1.0.0
+      date: 2025-06-20T09:01:45.646Z
+      changes:
+        - major
+      breaking: true
+      migrationRequired: true
+      notes: Initial version
+Button:
+  currentVersion: 1.1.0
+  lastModified: 2025-06-20
+  filePath: /Users/chrislee/Documents/Projects/has/has-ui-kit-v4/packages/ui-kit/components/ui/button.tsx
+  documentationVersion: 1.1.0
+  lastDocumentationUpdate: 2025-06-20T09:14:37.086Z
+  hash: 85001e186069f62ed20809f1b8c32cdad929029a8c4124ac08c67c1663eb1ac2
+  size: 3379
+  exports:
+    - ButtonProps
+    - Button
+    - buttonVariants
+  status: stable
+  history:
+    - version: 1.0.0
+      date: 2025-06-20T09:01:45.646Z
+      changes:
+        - major
+      breaking: true
+      migrationRequired: true
+      notes: Initial version
+    - version: 1.1.0
+      date: 2025-06-20T09:02:34.094Z
+      changes:
+        - minor
+      breaking: false
+      migrationRequired: false
+      notes: Updated from 1.0.0
+Breadcrumb:
+  currentVersion: 1.0.0
+  lastModified: 2025-06-20
+  filePath: /Users/chrislee/Documents/Projects/has/has-ui-kit-v4/packages/ui-kit/components/ui/breadcrumb.tsx
+  documentationVersion: ""
+  lastDocumentationUpdate: ""
+  hash: ed42da7c9fbc93e48340eb11ea7e67956f55f80ab955d0d0ea4493f1501dc061
+  size: 2882
+  exports:
+    - Breadcrumb
+    - BreadcrumbList
+    - BreadcrumbItem
+    - BreadcrumbLink
+    - BreadcrumbPage
+    - BreadcrumbSeparator
+    - BreadcrumbEllipsis
+  status: stable
+  history:
+    - version: 1.0.0
+      date: 2025-06-20T09:01:45.646Z
+      changes:
+        - major
+      breaking: true
+      migrationRequired: true
+      notes: Initial version
+Badge:
+  currentVersion: 1.0.0
+  lastModified: 2025-06-20
+  filePath: /Users/chrislee/Documents/Projects/has/has-ui-kit-v4/packages/ui-kit/components/ui/badge.tsx
+  documentationVersion: ""
+  lastDocumentationUpdate: ""
+  hash: aaabf3d155dfb7eeef620c0785cd06c7e199cd08ef9c9b6ac662c3f7be467a55
+  size: 1281
+  exports:
+    - BadgeProps
+    - Badge
+    - badgeVariants
+  status: stable
+  history:
+    - version: 1.0.0
+      date: 2025-06-20T09:01:45.647Z
+      changes:
+        - major
+      breaking: true
+      migrationRequired: true
+      notes: Initial version
+Avatar:
+  currentVersion: 1.0.0
+  lastModified: 2025-06-20
+  filePath: /Users/chrislee/Documents/Projects/has/has-ui-kit-v4/packages/ui-kit/components/ui/avatar.tsx
+  documentationVersion: ""
+  lastDocumentationUpdate: ""
+  hash: 3650bd1554199315427ecdec8c662f02258b3d28e89046b864276059a960dd47
+  size: 1573
+  exports:
+    - Avatar
+    - AvatarImage
+    - AvatarFallback
+  status: stable
+  history:
+    - version: 1.0.0
+      date: 2025-06-20T09:01:45.647Z
+      changes:
+        - major
+      breaking: true
+      migrationRequired: true
+      notes: Initial version
+Alert:
+  currentVersion: 1.0.0
+  lastModified: 2025-06-20
+  filePath: /Users/chrislee/Documents/Projects/has/has-ui-kit-v4/packages/ui-kit/components/ui/alert.tsx
+  documentationVersion: ""
+  lastDocumentationUpdate: ""
+  hash: 80566e3303bf1c8d38d1b76a910fd21f9024e594c72fb78635c255dad94e1613
+  size: 1748
+  exports:
+    - Alert
+    - AlertTitle
+    - AlertDescription
+  status: stable
+  history:
+    - version: 1.0.0
+      date: 2025-06-20T09:01:45.647Z
+      changes:
+        - major
+      breaking: true
+      migrationRequired: true
+      notes: Initial version
+AlertDialogOverlay:
+  currentVersion: 1.0.0
+  lastModified: 2025-06-20
+  filePath: /Users/chrislee/Documents/Projects/has/has-ui-kit-v4/packages/ui-kit/components/ui/alert-dialog.tsx
+  documentationVersion: ""
+  lastDocumentationUpdate: ""
+  hash: 73998ad0a55de2d9853837cb344cc383e22cf18314ecbf7cfbc5a57a3e47420b
+  size: 4588
+  exports:
+    - AlertDialog
+    - AlertDialogPortal
+    - AlertDialogOverlay
+    - AlertDialogTrigger
+    - AlertDialogContent
+    - AlertDialogHeader
+    - AlertDialogFooter
+    - AlertDialogTitle
+    - AlertDialogDescription
+    - AlertDialogAction
+    - AlertDialogCancel
+  status: stable
+  history:
+    - version: 1.0.0
+      date: 2025-06-20T09:01:45.648Z
+      changes:
+        - major
+      breaking: true
+      migrationRequired: true
+      notes: Initial version
+AccordionItem:
+  currentVersion: 1.0.0
+  lastModified: 2025-06-20
+  filePath: /Users/chrislee/Documents/Projects/has/has-ui-kit-v4/packages/ui-kit/components/ui/accordion.tsx
+  documentationVersion: ""
+  lastDocumentationUpdate: ""
+  hash: c0e837664b413213baabe648cf98fadfa3bbd115861cd9b7b2d04c9c851ca231
+  size: 2143
+  exports:
+    - Accordion
+    - AccordionItem
+    - AccordionTrigger
+    - AccordionContent
+  status: stable
+  history:
+    - version: 1.0.0
+      date: 2025-06-20T09:01:45.648Z
+      changes:
+        - major
+      breaking: true
+      migrationRequired: true
+      notes: Initial version
+MobileNumberInput:
+  currentVersion: 1.0.0
+  lastModified: 2025-06-20
+  filePath: /Users/chrislee/Documents/Projects/has/has-ui-kit-v4/packages/ui-kit/components/custom/mobile-number-input.tsx
+  documentationVersion: ""
+  lastDocumentationUpdate: ""
+  hash: ba1e07fcfa0025b6d0af32fcbbf4518a2d1214adfe7c2af19397cfd2338a2681
+  size: 4553
+  exports:
+    - default(function)
+  status: stable
+  history:
+    - version: 1.0.0
+      date: 2025-06-20T09:01:45.649Z
+      changes:
+        - major
+      breaking: true
+      migrationRequired: true
+      notes: Initial version
+DatePickerBottomSheet:
+  currentVersion: 1.0.0
+  lastModified: 2025-06-20
+  filePath: /Users/chrislee/Documents/Projects/has/has-ui-kit-v4/packages/ui-kit/components/custom/date-picker-bottom-sheet.tsx
+  documentationVersion: ""
+  lastDocumentationUpdate: ""
+  hash: 0861072b25fbd1817a6e7f00b97eb40a3c0d0417f49aa376bc72f3a435122703
+  size: 12896
+  exports:
+    - default(DatePickerBottomSheet)
+  status: stable
+  history:
+    - version: 1.0.0
+      date: 2025-06-20T09:01:45.650Z
+      changes:
+        - major
+      breaking: true
+      migrationRequired: true
+      notes: Initial version
+ProgressChart:
+  currentVersion: 1.0.0
+  lastModified: 2025-06-20
+  filePath: /Users/chrislee/Documents/Projects/has/has-ui-kit-v4/packages/ui-kit/components/custom/progress-chart.tsx
+  documentationVersion: ""
+  lastDocumentationUpdate: ""
+  hash: 31b65186b62fa683cb5b6a25d9cfcd2c0de5f8b5082942c1ce83486d106ded67
+  size: 9558
+  exports:
+    - default(ProgressChart)
+  status: stable
+  history:
+    - version: 1.0.0
+      date: 2025-06-20T09:07:11.955Z
+      changes:
+        - major
+      breaking: true
+      migrationRequired: true
+      notes: Initial version

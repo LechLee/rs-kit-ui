@@ -53,6 +53,11 @@ import ToggleGroupSample from './samples/ToggleGroup.sample'
 import TooltipSample from './samples/Tooltip.sample'
 import ColorsSample from './samples/Colors.sample'
 import MobileNumberInputSample from './samples/MobileNumberInput.sample'
+import ProgressChartSample from './samples/ProgressChart.sample'
+import SafeAreaContainerSample from './samples/SafeAreaContainer.sample'
+import PullToRefreshSample from './samples/PullToRefresh.sample'
+import CircularLoaderSample from './samples/CircularLoader.sample'
+import LoaderSample from './samples/Loader.sample'
 import App from './App'
 
 const routes = [
@@ -205,6 +210,26 @@ const routes = [
 			{
 				path: '/progress',
 				element: <ProgressSample />
+			},
+			{
+				path: '/progress-chart',
+				element: <ProgressChartSample />
+			},
+			{
+				path: '/safe-area-container',
+				element: <SafeAreaContainerSample />
+			},
+			{
+				path: '/pull-to-refresh',
+				element: <PullToRefreshSample />
+			},
+			{
+				path: '/circular-loader',
+				element: <CircularLoaderSample />
+			},
+			{
+				path: '/loader',
+				element: <LoaderSample />
 			},
 			{
 				path: '/radio-group',

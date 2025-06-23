@@ -1,5 +1,13 @@
 "use client"
 
+/**
+ * @component Chart
+ * @version 1.0.0
+ * @lastModified 2025-06-20
+ * @description Recharts-based chart components for data visualization
+ * @status stable
+ */
+
 import * as React from "react"
 import * as RechartsPrimitive from "recharts"
 

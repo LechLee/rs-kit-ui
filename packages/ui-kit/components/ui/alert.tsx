@@ -1,3 +1,11 @@
+/**
+ * @component Alert
+ * @version 1.0.0
+ * @lastModified 2025-06-20
+ * @description A feedback component for displaying important messages
+ * @status stable
+ */
+
 import * as React from "react"
 import { cva, type VariantProps } from "class-variance-authority"
 

@@ -1,5 +1,13 @@
 "use client"
 
+/**
+ * @component Resizable
+ * @version 1.0.0
+ * @lastModified 2025-06-20
+ * @description Resizable panel components with drag handles
+ * @status stable
+ */
+
 import { GripVertical } from "lucide-react"
 import * as ResizablePrimitive from "react-resizable-panels"
 

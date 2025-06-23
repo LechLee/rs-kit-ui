@@ -1,5 +1,13 @@
 "use client"
 
+/**
+ * @component Tooltip
+ * @version 1.0.0
+ * @lastModified 2025-06-20
+ * @description A floating tooltip component
+ * @status stable
+ */
+
 import * as React from "react"
 import * as TooltipPrimitive from "@radix-ui/react-tooltip"
 

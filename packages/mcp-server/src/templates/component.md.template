@@ -1,0 +1,108 @@
+---
+title: "{{componentName}}"
+description: "{{description}}"
+component: "{{componentName}}"
+version: "{{version}}"
+lastModified: "{{lastModified}}"
+status: "{{status}}"
+category: "{{category}}"
+tags: [{{tags}}]
+exports: [{{exports}}]
+dependencies: [{{dependencies}}]
+examples: {{exampleCount}}
+---
+
+# {{componentName}}
+
+{{description}}
+
+## Installation
+
+```bash
+pnpm add @rs-kit/ui-kit
+```
+
+## Import
+
+```typescript
+import { {{primaryExport}}{{#additionalExports}}, {{.}}{{/additionalExports}} } from "@rs-kit/ui-kit"
+```
+
+## Basic Usage
+
+```tsx
+{{basicExample}}
+```
+
+## API Reference
+
+### {{primaryExport}}
+
+{{componentDescription}}
+
+#### Props
+
+{{propTable}}
+
+{{#hasVariants}}
+#### Variants
+
+{{variantTable}}
+{{/hasVariants}}
+
+{{#hasSubComponents}}
+## Sub-components
+
+{{#subComponents}}
+### {{name}}
+
+{{description}}
+
+#### Props
+
+{{propTable}}
+
+{{/subComponents}}
+{{/hasSubComponents}}
+
+## Examples
+
+{{#examples}}
+### {{title}}
+
+{{description}}
+
+```tsx
+{{code}}
+```
+
+{{#hasPreview}}
+<ComponentPreview>
+{{code}}
+</ComponentPreview>
+{{/hasPreview}}
+
+{{/examples}}
+
+## Accessibility
+
+{{accessibilityNotes}}
+
+## Related Components
+
+{{#relatedComponents}}
+- [{{name}}](./{{slug}}.md) - {{description}}
+{{/relatedComponents}}
+
+## Changelog
+
+{{#changelog}}
+### {{version}} - {{date}}
+
+{{changes}}
+
+{{/changelog}}
+
+---
+
+*Generated on {{generatedDate}} • [Edit this page]({{editUrl}})*

@@ -1,5 +1,13 @@
 "use client"
 
+/**
+ * @component Dialog
+ * @version 1.0.0
+ * @lastModified 2025-06-20
+ * @description A modal dialog component for focused interactions
+ * @status stable
+ */
+
 import * as React from "react"
 import * as DialogPrimitive from "@radix-ui/react-dialog"
 import { X } from "lucide-react"

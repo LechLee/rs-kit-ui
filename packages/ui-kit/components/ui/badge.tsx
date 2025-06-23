@@ -1,3 +1,11 @@
+/**
+ * @component Badge
+ * @version 1.0.0
+ * @lastModified 2025-06-20
+ * @description A small status indicator or label component
+ * @status stable
+ */
+
 import * as React from "react"
 import { cva, type VariantProps } from "class-variance-authority"
 

@@ -1,5 +1,13 @@
 "use client"
 
+/**
+ * @component HoverCard
+ * @version 1.0.0
+ * @lastModified 2025-06-20
+ * @description A floating card that appears on hover
+ * @status stable
+ */
+
 import * as React from "react"
 import * as HoverCardPrimitive from "@radix-ui/react-hover-card"
 

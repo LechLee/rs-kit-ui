@@ -1,3 +1,11 @@
+/**
+ * @component DatePickerBottomSheet
+ * @version 1.0.0
+ * @lastModified 2025-06-20
+ * @description DatePickerBottomSheet component for the UI library
+ * @status stable
+ */
+
 import { useState, useEffect, useRef } from 'react'
 import { ChevronLeft, ChevronDown } from 'lucide-react'
 import { cn } from '@/lib/utils'

@@ -45,9 +45,12 @@ function App() {
 		Feedback: [
 			{ name: 'Alert', path: '/alert' },
 			{ name: 'Alert Dialog', path: '/alert-dialog' },
+			{ name: 'Circular Loader', path: '/circular-loader' },
 			{ name: 'Dialog', path: '/dialog' },
 			{ name: 'Drawer', path: '/drawer' },
+			{ name: 'Loader', path: '/loader' },
 			{ name: 'Progress', path: '/progress' },
+			{ name: 'Progress Chart', path: '/progress-chart' },
 			{ name: 'Sheet', path: '/sheet' },
 			{ name: 'Skeleton', path: '/skeleton' },
 			{ name: 'Sonner', path: '/sonner' },
@@ -74,6 +77,8 @@ function App() {
 		],
 		Utility: [
 			{ name: 'Form', path: '/form' },
+			{ name: 'Pull to Refresh', path: '/pull-to-refresh' },
+			{ name: 'Safe Area Container', path: '/safe-area-container' },
 			{ name: 'ScrollArea', path: '/scroll-area' },
 			{ name: 'Toggle', path: '/toggle' },
 			{ name: 'Toggle Group', path: '/toggle-group' }
@@ -113,7 +118,7 @@ function App() {
 					</nav>
 				</aside>
 
-				<main className="flex-1 p-8 overflow-y-auto">
+				<main className="flex-1 p-8 overflow-y-auto h-[calc(100vh-65px)]">
 					<Outlet />
 				</main>
 			</div>

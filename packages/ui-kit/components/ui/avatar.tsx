@@ -1,5 +1,13 @@
 "use client"
 
+/**
+ * @component Avatar
+ * @version 1.0.0
+ * @lastModified 2025-06-20
+ * @description A user profile image with fallback initials
+ * @status stable
+ */
+
 import * as React from "react"
 import * as AvatarPrimitive from "@radix-ui/react-avatar"
 

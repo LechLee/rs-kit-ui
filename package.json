@@ -10,6 +10,18 @@
     "start": "pnpm build:ui-kit && (pnpm --filter ui-kit dev & sleep 2 && pnpm --filter playground dev)",
     "dev": "pnpm --filter ui-kit dev & sleep 1 && pnpm --filter playground dev",
     "clean": "rm -rf node_modules && rm -rf packages/*/node_modules && rm -rf packages/*/dist",
-    "postinstall": "pnpm build"
+    "postinstall": "pnpm build",
+    "docs:status": "pnpm --filter mcp-server docs:status",
+    "docs:extract": "pnpm --filter mcp-server docs:extract",
+    "docs:check": "pnpm --filter mcp-server version-check",
+    "docs:annotate": "pnpm --filter mcp-server docs:annotate",
+    "docs:watch": "pnpm --filter mcp-server watch-components",
+    "docs:generate": "pnpm --filter mcp-server docs:generate",
+    "docs:generate-all": "pnpm --filter mcp-server docs:generate-all",
+    "docs:analyze-samples": "pnpm --filter mcp-server docs:analyze-samples",
+    "docs:extract-examples": "pnpm --filter mcp-server docs:extract-examples",
+    "test:mcp": "pnpm --filter mcp-server test:mcp",
+    "test:samples": "pnpm --filter mcp-server test:samples",
+    "mcp:start": "pnpm --filter mcp-server mcp:start"
   }
 }

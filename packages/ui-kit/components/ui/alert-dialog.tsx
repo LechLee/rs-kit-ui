@@ -1,3 +1,11 @@
+/**
+ * @component AlertDialog
+ * @version 1.0.0
+ * @lastModified 2025-06-20
+ * @description A modal dialog for critical confirmations and alerts
+ * @status stable
+ */
+
 import * as React from "react"
 import * as AlertDialogPrimitive from "@radix-ui/react-alert-dialog"
 

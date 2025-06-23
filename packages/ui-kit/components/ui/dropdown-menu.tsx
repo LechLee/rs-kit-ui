@@ -1,3 +1,11 @@
+/**
+ * @component DropdownMenu
+ * @version 1.0.0
+ * @lastModified 2025-06-20
+ * @description A dropdown menu with multiple action items
+ * @status stable
+ */
+
 import * as React from "react"
 import * as DropdownMenuPrimitive from "@radix-ui/react-dropdown-menu"
 import { Check, ChevronRight, Circle } from "lucide-react"

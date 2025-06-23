@@ -1,3 +1,11 @@
+/**
+ * @component MobileNumberInput
+ * @version 1.0.0
+ * @lastModified 2025-06-20
+ * @description MobileNumberInput component for the UI library
+ * @status stable
+ */
+
 import { useState } from 'react'
 import { Command, CommandEmpty, CommandGroup, CommandItem, CommandList } from '../ui/command'
 import { Popover, PopoverContent, PopoverTrigger } from '../ui/popover'

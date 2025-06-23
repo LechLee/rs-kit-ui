@@ -168,12 +168,21 @@ module.exports = {
 						height: '200px',
 						opacity: '0'
 					}
+				},
+				'circular-fade': {
+					'0%, 39%, 100%': {
+						opacity: '0'
+					},
+					'40%': {
+						opacity: '1'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
-				ripple: 'ripple 0.4s ease-out'
+				ripple: 'ripple 0.4s ease-out',
+				'circular-fade': 'circular-fade 1s linear infinite'
 			}
 		}
 	},
