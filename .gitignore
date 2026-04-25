@@ -53,6 +53,8 @@ pnpm-lock.yaml
 # Cache
 .cache/
 **/.cache
+jiti/
+node-compile-cache/
 
 # Generated files
 *.css.map
