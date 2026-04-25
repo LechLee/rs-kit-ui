@@ -2,6 +2,8 @@
 @import 'tw-animate-css';
 
 @custom-variant dark (&:is(.dark *));
+
+@layer rs-kit {
 body {
 	padding-top: env(safe-area-inset-top);
 	padding-bottom: env(safe-area-inset-bottom);
@@ -78,6 +80,7 @@ body {
 	--sidebar-accent-foreground: oklch(0.985 0 0);
 	--sidebar-border: oklch(0.269 0 0);
 	--sidebar-ring: oklch(0.439 0 0);
+}
 }
 
 @theme inline {
@@ -170,7 +173,7 @@ body {
 	}
 }
 
-@layer base {
+@layer rs-kit {
 	* {
 		@apply border-border outline-ring/50;
 	}

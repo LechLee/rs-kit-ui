@@ -23,7 +23,8 @@ export default defineConfig({
 		}
 	],
 	output: {
-		target: 'web'
+		target: 'web',
+		injectStyles: true
 	},
 	plugins: [pluginReact()]
 })
